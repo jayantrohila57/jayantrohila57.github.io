@@ -10,10 +10,17 @@ html, body {
     height: 100%;
     margin: 0px;
   }
+  html {
+    scroll-behavior: smooth;
+  }
+
   
+
+
   body {
     font-family: "DM Sans", sans-serif;
     background-color: #FFF89A;
+    
   }
 
   .header {
@@ -37,7 +44,7 @@ html, body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: rgb(17, 17, 17);
     overflow-x: hidden;
     transition: 0.9s;
     padding-top: 150px;
@@ -46,10 +53,12 @@ html, body {
   .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    text-shadow: 0 0 99px #FFF89A;
+    font-size: 40px;
     color: #818181;
+    text-: 1px solid;
     display: block;
-    transition: 0.3s;
+    transition: 0.6s;
   }
   
   .sidebar a:hover {
@@ -58,6 +67,7 @@ html, body {
   
   .sidebar .closebtn {
     position: absolute;
+    text-shadow: 0 0 99px #FFF89A;
     top: 0;
     right: 20px;
     font-size: 36px;
@@ -69,7 +79,7 @@ html, body {
     font-size: 18px;
     border-radius:30px;
     cursor: pointer;
-    background-color: rgba(17, 17, 17, 0.555);
+    background-color: rgba(17, 17, 17, 0.856);
     color: white;
     padding: 12px 15px;
     border: none;
@@ -165,8 +175,15 @@ html, body {
   .fakeimg {
     background-color: #FFF89A;
     border-radius: 30px;
+    box-shadow: 0 0 57px rgba(0, 0, 0, 0.25);
     width: 100%;
     padding: 20px;
+  }
+
+  .card:hover {
+    background: #fff019c7;
+    text-shadow: 0 0 85px rgb(0, 0, 0);
+    transition: 0.9s;
   }
   
   /* Add a card effect for articles */
@@ -189,6 +206,7 @@ html, body {
   .footer {
     padding: 20px;
     text-align: center;
+    
     border-radius: 30px;
     background: #FFC900;
     border-radius: 30px 30px 0px 00px;
