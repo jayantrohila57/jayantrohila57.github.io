@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,62 +7,72 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notes App</title>
-  <link rel="stylesheet" href="./style.css">
+  <title>App</title>
+  <link rel="stylesheet" href="./css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 <body> 
 
-  <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'sNote')" id="defaultOpen">Your Notes </button>
-    <button class="tablinks" onclick="openCity(event, 'Note')">Add Notes</button>
-    <button class="tablinks" onclick="openCity(event, 'Help')">Want Help</button>
+  <div class="app-container">
+    <div class="app-header">
+      <div class="app-header-left">
+        <span class="app-icon"></span>
+        <p class="app-name">Jayant Rohila</p>
+      </div>
+         <div class="app-header-right">
+      </div>
+    </div>
+    <div class="app-content">
+
+      <div class="projects-sectionM">
+        <div class="projects-sectionM-header">
+          <p>Menus</p>
+          <p>Content</p>
+          <p>Content</p>
+          <p>Content</p>
+          <p>Content</p>
+          
+        </div>
+      </div>
+
+      <div class="projects-section">
+        <div class="projects-section-header">
+          <p>Content</p>
+        </div>
+      </div>
+
+   
+
+
+      <div class="project-boxes jsGridView">
+
+
+        <div class="project-box-wrapper">
+          <div class="project-box" style="background-color: #fee4cb;">
+            <div class="project-box-header">
+          <h1>Hello</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-box-wrapper">
+      <div class="project-box" style="background-color: #d5deff;">
+        <div class="project-box-content-header">
+        <h1>Hello</h1>
+        </div>
+      </div>
+    </div>
+
+
   </div>
 
-
-
-  <div id="sNote" class="tabcontent">
-    <p>
-      <h1>Welcome</h1></b>
-      <p>
-      <h3>Notes By Jayant Rohila Enjoy.</h3>
-      </p>
-      <p>
-      <h2>
-        Web Notes Application  is the Notes Saving Application
-        which help in saving the needed notes at a place in your
-        browser tab. You can create as many notes as you want, 
-        and also delete them when you are not needed anymore. 
-        Notes are a great way to keep track of information for
-        yourself.
-      </h2>
-    </p>
-
+    </div>
+  </div>
   
 
-  </div>
-  <div id="Note" class="tabcontent">
-    <div id="S_app">
-      <button class="add-note" type="button">+</button>
-    </div>
-    <script src="./script.js"></script>
-  </div>
-
-
-
-  <div id="Help" class="tabcontent">
-    <p>
-    <h1>Help</h1></b></p>
-    <p>
-    <h3>Click On Add Notes to add Note.</h3>
-    </p>
-    <p>
-    <h3>Dubble Click On Note to delete the note.</h3>
-    </p>
-  </div>
-
+<script src="./js/script.js"></script>
 </body>
 
 
