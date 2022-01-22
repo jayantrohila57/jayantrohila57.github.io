@@ -1,88 +1,76 @@
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>  
+  <body>
+    <div class="header">
+      <p id="WBcorners">Website</p>
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="clients.html">Clients</a>
+      <a href="contact.html">Contact</a>
 
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>App</title>
-  <link rel="stylesheet" href="./css/style.css">
+      <button class="mode-switch" title="Switch Theme">
+        <svg class="moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="24" height="24" viewBox="0 0 24 24">
+          <defs>
+          </defs>
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+        </svg>
+      </button>
 
-
-</head>
-
-<body> 
-
-  
-  <div class="header">
-    <p id="WBcorners">Website</p>
+    </div>
     
-  </div>
 
-      <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="clients.html">Clients</a>
-        <a href="contact.html">Contact</a>
-      </div>      
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰</button>
+    </div>
 
-      <div id="main">
-        <button class="openbtn" onclick="openNav()">☰</button>  
-      </div>
-
- 
-
-
-
-
-      <div id="aa">
-      <div class="row">
-        
-        <div class="leftcolumn">
-          <div class="card">
-            <h2>TITLE HEADING</h2>
-            <div class="fakeimg" style="height:200px;">Image</div>
-          </div>
-
-          <div class="card">
-            <h2>TITLE HEADING</h2>
-            <div class="fakeimg" style="height:200px;">Image</div>
-             </div>
-
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+          <div class="fakeimg" style="height: 200px">Image</div>
         </div>
 
-        <div class="rightcolumn">
-        
-          <div class="card">
-            <h2>About Me</h2>
-            <div class="fakeimg" style="height:100px;">Image</div> 
-          </div>
-          
-          <div class="card">
-            <h3>Popular Post</h3>
-            <div class="fakeimg"><p>Image</p></div>  
-          </div>
-
-          <div class="card">
-            <h3>Follow Me</h3>
-            <div class="fakeimg"><p>Image</p></div>  
-          </div>
-
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+          <div class="fakeimg" style="height: 200px">Image</div>
         </div>
       </div>
-      
-      <div class="footer">
-        <h2>Footer</h2>
+
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>About Me</h2>
+          <div class="fakeimg" style="height: 100px">Image</div>
+        </div>
+
+        <div class="card">
+          <h2>Popular Post</h2>
+          <div class="fakeimg"><p>Image</p></div>
+        </div>
+
+        <div class="card">
+          <h2>Follow Me</h2>
+          <div class="fakeimg"><p>Image</p></div>
+        </div>
       </div>
-      
+    </div>
 
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
 
-<script src="./js/script.js"></script>
-</body>
-
-
+    <script src="./js/script.js"></script>
+  </body>
 </html>
