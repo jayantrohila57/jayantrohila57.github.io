@@ -4,128 +4,110 @@
   box-sizing: border-box;
 }
 
-:root {
-    --app-container: #1f1d2b;
-    --app-container: #111827;
-    --main-color: #fff;
-    --secondary-color: rgba(255,255,255,.8);
-    --projects-section: #1f2937;
-    --link-color: rgba(255,255,255,.8);
-    --link-color-hover: rgba(195, 207, 244, 0.1);
-    --link-color-active-bg: rgba(195, 207, 244, 0.2);
-    --button-bg: #1f2937;
-    --search-area-bg: #1f2937;
-    --message-box-hover: #243244;
-    --message-box-border: rgba(255,255,255,.1);
-    --star: #ffd92c;
-    --light-font: rgba(255,255,255,.8);
-    --more-list-bg: #2f3142;
-    --more-list-bg-hover: rgba(195, 207, 244, 0.1);
-    --more-list-shadow: rgba(195, 207, 244, 0.1);
-    --message-btn: rgba(195, 207, 244, 0.1);
-  }
-  
 
 html, body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin: 0;
   }
   
   body {
     font-family: "DM Sans", sans-serif;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(184, 110, 110);
+    background-color: #1A5F7A;
   }
 
-
-  .app-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background-color: var(--app-container);
-    transition: 0.2s;
-    max-width: 1800px;
+  .header {
+    padding: 50px;
+    height: 100px;
+    background: #FFC900;
+    border-radius:0px 0px 30px 30px;
+    color: white;
+    font-size: 40px;
   }
 
-
-.app-container button,
-.app-container input,
-.app-container optgroup,
-.app-container select,
-.app-container textarea {
-    font-family: "DM Sans", 
-    sans-serif;
+  
+  .sidebar {
+    height: 600px;
+    margin-top: 20px;
+    border-radius: 0% 30px 30px 0%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.9s;
+    padding-top: 150px;
   }
-
-
-
-  .app-content {
-    display: flex;
-    height: 100%;
-    overflow: hidden;
-    padding: 16px 24px 24px 0;
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
   }
-  .app-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 24px 24px;
-    position: relative;
+  
+  .sidebar a:hover {
+    color: #FFC900;
   }
-
-  .app-header-left {
-    flex-grow: 10;
-    margin-left: 10px;
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 36px;
+    margin-left: 20px;
   }
- 
-  .app-name {
-    color: var(--main-color);
-    font-size: 32px;
-    line-height: 10px;
-    font-weight: 700;
-    margin: 25px;
+  
+  .openbtn {
+    font-size: 15px;
+    border-radius:30px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 12px 15px;
+    border: none;
   }
-
-
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .9s;
+    padding: 0px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 36px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
   
 
 
-
-  .projects-section {
-    flex: 2;
-    margin-left: 32px;
-    background-color: var(--projects-section);
-    border-radius: 32px;
-    padding: 32px 32px 32px 32px;
-    overflow: hidden;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
- 
-  .projects-section-header p {
-    font-size: 32px;
-    line-height: 32px;
-    font-weight: 700;
-    opacity: 0.9;
-    margin: 0;
-    color: var(--main-color);
-  }
-
-  .project-box {
-    position: absolute;
-    left: 50px;
-    top: 200px;
-    z-index: 2;
-    width: 220px;
-    height: 400px;
-    --main-color-card: #dbf6fdc2;
-    border-radius: 30px;
-    padding: 16px;
-    background-color: var(--main-color-card);
+  #rcorners1 {
+    display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  padding: 30px;
+  gap: 30px;
+  
+  height: 150px;
+  width: 150px;
+   box-sizing: border-box;
+   padding: 16px;
+   border: none;
+   background: #FFC900;
+   border-radius: 30px;
+   box-shadow: 0 0 7px rgba(36, 36, 36, 0.24);
+   resize: none;
+   font-family: sans-serif;
+   font-size: 16px;
   }
