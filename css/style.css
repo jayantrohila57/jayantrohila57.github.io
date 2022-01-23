@@ -4,60 +4,59 @@
   box-sizing: border-box;
 }
 
-
 :root {
-    --app-container: #6ac9d1;
-    --main-color: #0D7377;
-    --secondary-color: #A4EBF3;
-    --projects-section: #51C4D3;
+  --app-container: #6ac9d1;
+  --main-color: #0d7377;
+  --secondary-color: #a4ebf3;
+  --projects-section: #51c4d3;
 
-    --link-color: #1f1c2e;
-    --link-color-hover: #00a7cc60;
-    --link-color-active: #fff;
-    --link-color-active-bg: #1f1c2e;
-   
+  --link-color: #1f1c2e;
+  --link-color-hover: #00a7cc60;
+  --link-color-active: #fff;
+  --link-color-active-bg: #1f1c2e;
 
+  --message-box-hover: #fafcff;
+  --message-box-border: #e9ebf0;
 
-    --message-box-hover: #fafcff;
-    --message-box-border: #e9ebf0;
-    --more-list-bg: #fff;
-    --more-list-bg-hover: #f6fbff;
-    --more-list-shadow: rgba(209, 209, 209, 0.4);
-    --button-bg: #1f1c24;
-    --search-area-bg: #fff;
-    --star: #1ff1c2e;
-    --message-btn: #fff;
-  }
   
-  .dark:root {
-    --app-container: #222831;
-    --main-color: #2C394B;
-    --secondary-color: #343d42;
-    --projects-section: #007880;
+  --more-list-bg: #fff;
+  --more-list-bg-hover: #f6fbff;
+  --more-list-shadow: rgba(209, 209, 209, 0.4);
+  --button-bg: #1f1c24;
+  --search-area-bg: #fff;
+  --star: #1ff1c2e;
+  --message-btn: #fff;
+}
 
-    --link-color: rgba(255,255,255,.8);
-    --link-color-hover: #00778049;
-    --link-color-active-bg: rgba(195, 207, 244, 0.2);
-    
-    --button-bg: #1f2937;
-    --search-area-bg: #1f2937;
-    --message-box-hover: #243244;
-    --message-box-border: rgba(255,255,255,.1);
-    --star: #ffd92c;
-    --light-font: rgba(255,255,255,.8);
-    --more-list-bg: #2f3142;
-    --more-list-bg-hover: rgba(195, 207, 244, 0.1);
-    --more-list-shadow: rgba(195, 207, 244, 0.1);
-    --message-btn: rgba(195, 207, 244, 0.1);
-  }
-  
+.dark:root {
+  --app-container: #222831;
+  --main-color: #2c394b;
+  --secondary-color: #313c42;
+  --projects-section: #77929488;
+
+  --link-color: rgba(255, 255, 255, 0.8);
+  --link-color-hover: #aabbbd49;
+  --link-color-active-bg: rgba(195, 207, 244, 0.2);
+
+ 
+  --message-box-hover: #fafcff;
+  --message-box-border: #e9ebf0;
+
+  --button-bg: #1f2937;
+  --search-area-bg: #1f2937;
+  --star: #ffd92c;
+  --light-font: rgba(255, 255, 255, 0.8);
+  --more-list-bg: #2f3142;
+  --more-list-bg-hover: rgba(195, 207, 244, 0.1);
+  --more-list-shadow: rgba(195, 207, 244, 0.1);
+  --message-btn: rgba(195, 207, 244, 0.1);
+}
 
 html,
 body {
   width: 100%;
   height: 100%;
   margin: 0px;
-
 }
 html {
   scroll-behavior: smooth;
@@ -66,7 +65,6 @@ html {
 body {
   font-family: "DM Sans", sans-serif;
   background-color: var(--app-container);
-
 }
 
 .header {
@@ -76,7 +74,7 @@ body {
   padding-left: 15%;
   background: var(--secondary-color);
   border-radius: 0px 0px 30px 30px;
-
+  text-shadow: 0px 0px 30px var(--message-box-hover);
 }
 
 .sidebar {
@@ -89,7 +87,7 @@ body {
   top: 0;
   left: 0;
   color: var(--main-color);
-  background-color:var(--app-container);
+  background-color: var(--app-container);
   overflow-x: hidden;
   transition: 0.3s;
   padding-top: 150px;
@@ -98,75 +96,86 @@ body {
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  text-shadow: 10px 5px 30px var(--projects-section);
+  text-shadow: 0px 0px 50px var(--message-box-hover);
   font-size: 40px;
-  color:  var(--link-color-active);
+  color: var(--link-color-active);
   display: block;
   transition: 0.3s;
   border-radius: 30px;
 }
 
 .sidebar a:hover {
-    background-color: var(--link-color-hover);
-    color: var(--link-color-active);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  margin-bottom: 50px;
+  transition: 0.5s;
+  border-style: hidden;
+  background-color: rgba(0, 0, 0, 0);
 }
 .sidebar a:active {
-    background-color: var(--link-color-active-bg);
-    color: var(--link-color-active);
-  }
+  background-color: var(--link-color-active-bg);
+  color: var(--link-color-active);
+}
 
 .sidebar .closebtn {
   position: absolute;
-  text-shadow: 0 0 99px #fff89a;
   top: 0;
   right: 20px;
-  font-size: 36px;
-  margin-left: 20px;
-  padding: 50;
-  background-color: transparent;
+  font-size: 50px;
+  padding-top: 10px;
+  margin-left: 10px;
+  text-shadow: 0px 0px 30px var(--message-box-hover);
+  padding: 20px;
   border: 0px;
 }
 
 .mode-switch {
-    background-color: transparent;
+  background-color: transparent;
   border: none;
   padding: 0;
   color: var(--main-color);
   display: flex;
-    padding: 20;
-    border: 0px;
-    text-shadow: 10px 5px 30px var(--projects-section);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 550px;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 20px;
-  }
-  .mode-switch.active .moon {
-    fill: var(--main-color);
-    
-  }
+  padding: 50;
+  border: 00px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 530px;
+  right: 50px;
+  font-size: 50px;
+  margin-left: 20px;
+}
+.mode-switch.active .moon {
+  fill: var(--main-color);
+}
 
-  .mode-switch:hover {
-    color: var(--projects-section);
-  }
+.mode-switch:hover {
+  color: var(--projects-section);
+  transition: 0.5s;
+}
 
 .openbtn {
   margin-top: 1px;
   font-size: 18px;
   border-radius: 30px;
   cursor: pointer;
-  background-color: rgba(17, 17, 17, 0.856);
+  background-color: var(--projects-section);
   color: white;
   padding: 12px 15px;
   border: none;
+  text-shadow: 0px 0px 10px var(--message-box-hover);
+
 }
 
 .openbtn:hover {
-  background-color: #444;
+  background-color:var(--link-color-hover);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  margin-bottom: 50px;
+  transition: 0.9s;
 }
 
 #main {
@@ -229,7 +238,7 @@ body {
 .leftcolumn {
   float: left;
   width: 75%;
-  background-color:  var(--app-container);
+  background-color: var(--app-container);
   padding-left: 10px;
 }
 
@@ -243,7 +252,7 @@ body {
 
 /* Fake image */
 .fakeimg {
-  background-color: var( --projects-section);
+  background-color: var(--projects-section);
   border-radius: 30px;
   box-shadow: 0 0 57px rgba(0, 0, 0, 0.25);
   width: 100%;
@@ -254,6 +263,10 @@ body {
   background-color: var(--link-color-hover);
   text-shadow: 0 0 85px rgb(0, 0, 0);
   transition: 0.3s;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /* Add a card effect for articles */
@@ -279,7 +292,7 @@ body {
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
-  background:  var( --secondary-color);
+  background: var(--secondary-color);
   border-radius: 30px 30px 0px 00px;
   margin-top: 20px;
 }
