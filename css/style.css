@@ -30,13 +30,13 @@
   }
   
   .dark:root {
-    --app-container: #252525;
+    --app-container: #222831;
     --main-color: #2C394B;
-    --secondary-color: #414141;
-    --projects-section: #B55400;
+    --secondary-color: #343d42;
+    --projects-section: #007880;
 
     --link-color: rgba(255,255,255,.8);
-    --link-color-hover: #b5540063;
+    --link-color-hover: #00778049;
     --link-color-active-bg: rgba(195, 207, 244, 0.2);
     
     --button-bg: #1f2937;
@@ -66,7 +66,7 @@ html {
 body {
   font-family: "DM Sans", sans-serif;
   background-color: var(--app-container);
-  transition: 1.9s;
+
 }
 
 .header {
@@ -91,18 +91,19 @@ body {
   color: var(--main-color);
   background-color:var(--app-container);
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.3s;
   padding-top: 150px;
 }
 
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  text-shadow: 0 0 99px #fff89a;
+  text-shadow: 10px 5px 30px var(--projects-section);
   font-size: 40px;
-  color: #818181;
+  color:  var(--link-color-active);
   display: block;
   transition: 0.3s;
+  border-radius: 30px;
 }
 
 .sidebar a:hover {
@@ -121,6 +122,9 @@ body {
   right: 20px;
   font-size: 36px;
   margin-left: 20px;
+  padding: 50;
+  background-color: transparent;
+  border: 0px;
 }
 
 .mode-switch {
@@ -131,7 +135,7 @@ body {
   display: flex;
     padding: 20;
     border: 0px;
-   
+    text-shadow: 10px 5px 30px var(--projects-section);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,7 +151,7 @@ body {
   }
 
   .mode-switch:hover {
-    color: #ffc900;
+    color: var(--projects-section);
   }
 
 .openbtn {
@@ -166,7 +170,7 @@ body {
 }
 
 #main {
-  transition: margin-left 0.9s;
+  transition: margin-left 0.5s;
   padding: 0px;
   position: absolute;
   top: 20px;
