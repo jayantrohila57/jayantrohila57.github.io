@@ -42,7 +42,7 @@ body {
   left: 0;
   background-color: rgb(17, 17, 17);
   overflow-x: hidden;
-  transition: 0.9s;
+  transition: 0.3s;
   padding-top: 150px;
 }
 
@@ -52,9 +52,8 @@ body {
   text-shadow: 0 0 99px #fff89a;
   font-size: 40px;
   color: #818181;
-  text-: 1px solid;
   display: block;
-  transition: 0.6s;
+  transition: 0.3s;
 }
 
 .sidebar a:hover {
