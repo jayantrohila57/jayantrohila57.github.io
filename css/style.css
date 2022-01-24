@@ -6,7 +6,7 @@
 }
 
 :root {
-  --app-container: #30c7ec;
+  --app-container: #0DCEDA;
   --main-color: #0d7377;
   --secondary-color:radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 7%, #46aef7 100%);
   --projects-section: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
@@ -70,7 +70,7 @@ body {
 
 .header {
   padding-top: 5px;
-  height: 80px;
+  height: 160px;
   padding-left: 5%;
   margin-left: 10px;
   margin-right: 10px;
@@ -84,6 +84,7 @@ body {
   
   height: 70px;
   width: 250px;
+  margin-top: 80px;
   padding: 0.5rem;
   padding-left: 30px;
   font-family: sans-serif;
@@ -122,8 +123,8 @@ body {
 .sidebar a:hover {
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   transition: 0.5s;
   border-style: hidden;
   background-color: rgba(0, 0, 0, 0);
@@ -146,9 +147,10 @@ body {
 }
 
 .mode-switch {
-  background-color: transparent;
-  border: none;
+  border-radius: 10px;
   padding: 0;
+  background-color : transparent;
+  padding: 19px 15px;
   color: var(--main-color);
   display: flex;
   padding: 0px;
@@ -157,10 +159,22 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 26px;
-  right: 75px;
+  top: 27px;
+  right: 92px;
   font-size: 50px;
   margin-left: 20px;
+}
+#mode-id {
+  height: 55px;
+  width: 55px;
+  border-radius: 30px;
+  background: var(--projects-section);
+  transition: margin-left 0.5s;
+  padding: 0px;
+  position: absolute;
+  top: 14px;
+  right: 80px; 
+
 }
 .mode-switch.active .moon {
   fill: var(--more-list-bg);
@@ -173,21 +187,16 @@ body {
 
 .openbtn {
   font-size: 28px;
+  color: var(--main-color);
   border: none;
   border-radius: 28px;
   padding: 9px 15px;
   cursor: pointer;
-  color: white;
-  background-color: var(--projects-section);
-  text-shadow: 0px 0px 10px var(--message-box-hover);
+  background: var(--projects-section);
 }
 
 .openbtn:hover {
-  background-color: var(--link-color-hover);
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 50px;
-  margin-bottom: 50px;
+  color: var( --more-list-bg-hover);
   transition: 0.9s;
 }
 
