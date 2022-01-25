@@ -28,7 +28,7 @@
   --projects-section: #1E5F74;
 
   --image-color:linear-gradient(120deg, #204858 0%, #1e4258 90%);
-  --link-color-hover: #1e5f74b4;
+  --link-color-hover: #2f748bb4;
   --link-color-active-bg: rgba(195, 207, 244, 0.2);
 
   --message-box-hover: #fafcff;
@@ -45,10 +45,7 @@
 }
 
 html,
-body {
-  padding-top: 60px;
-
-}
+body,
 html {
   align-items: stretch;
 }
@@ -57,11 +54,13 @@ body {
   font-family: "DM Sans", sans-serif;
   background-color: var(--app-container);
   transition: 1.3s;
+  padding-top: 80px;
+  padding-bottom: 0px
 }
 
 .header {
   top: 0;
-  height: 80px;
+  height: 90px;
   width: 90%;
   padding-left: 5%;
   position:fixed;
@@ -74,7 +73,7 @@ body {
 }
 .hcontainer{
   top: 0;
-  height: 80px;
+  height: 100px;
   padding-top: 15px;
   padding-left: 20px;
   width: 95%;
@@ -85,24 +84,38 @@ body {
 }
 /* Footer */
 .footer {
-  padding: 10px;
+  padding: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   background: var(--secondary-color);
-  border-radius: 30px 30px 0px 00px;
+  border-radius: 30px 30px 30px 30px;
   margin-left: 10px;
   margin-top: 20px;
-  bottom: 0px;
   margin-right: 10px;
   transition: 1.3s;
+ 
 }
+.fcontainer{
+  padding-top: 15px;
+  padding-left: 20px;
+  width: 95%;
+  color:  var(--link-color-active);
+  text-shadow: 0px 0px 30px var(--message-box-hover);
+  font-size: 40px;
+  text-decoration: none;
+}
+
+
+
 
 .sidebar {
   height: 95%;
-  margin-top: 10px;
-  border-radius: 0% 30px 30px 0%;
+  margin-top: 20px;
+  margin-left: 50px;
+  border-radius: 30px 30px 30px 30px;
   width: 80%;
   position: fixed;
   z-index: 1;
+  text-align: center;
   top: 0;
   left: 0;
   background-color: var(--app-container);
@@ -136,6 +149,8 @@ body {
   background-color: var(--link-color-active-bg);
   color: var(--link-color-active);
 }
+
+
 
 .sidebar .closebtn {
   position: absolute;
@@ -315,18 +330,21 @@ body {
 }
 
 .boxs {
-  font-size: 80%;
+  font-size: 18px;
+  padding-top: 5px;
 }
 .boxs-item {
   display: flex;
   flex-flow: column;
-  padding: 2rem;
-
   background-color: var(--app-container);
   background: var(--secondary-color);
-  margin-top: 50px;
+  padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
   border-radius: 30px;
-  box-shadow: 0 0 7px rgba(36, 36, 36, 0.24);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+  transition: 1.3s;
 }
 .boxs-item > h1 {
   margin: 1rem 1rem 0;
@@ -343,6 +361,10 @@ body {
 }
 .boxs-item:hover {
   background-color: var(--link-color-hover);
-  text-shadow: 0 0 85px rgb(0, 0, 0);
-  transition: 0.6s;
+  transition: 0.3s;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  transition: 1.3s;
 }
