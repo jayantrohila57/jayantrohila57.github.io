@@ -3,12 +3,8 @@
   --main-color: #dee5e7;
   --text-color: rgb(0, 0, 0);
   --secondary-color: #dfcbe6;
-  --section-color: radial-gradient(
-    circle 248px at center,
-    #16d9e3 0%,
-    #30c7ec 47%,
-    #46aef7 100%
-  );
+  --box-shadow: 0 0 10px rgba(119, 106, 106, 0.329);
+  --box-shadow-lite: 0 0 10px rgba(0, 0, 0, 0.090);
   --color-hover: #b28cb9be;
   --color-active: #fff;
   --color-active-bg: #1f1c2e;
@@ -28,14 +24,11 @@ body {
   background-color: var(--main-container);
 }
 
-.footer-container{
-
-}
-
 nav {
   background: var(--main-color);
   border-radius: 30px 30px 30px 30px;
   height: 70px;
+  box-shadow: var(--box-shadow);
   width: 95%;
   margin-top: 5px;
   margin-left: 2.5%;
@@ -46,6 +39,7 @@ nav {
   color: var(--text-color);
   background-color: var(--secondary-color);
   float: left;
+  box-shadow: var(--box-shadow-lite);
   line-height: 50px;
   margin-left: 15px;
   cursor: pointer;
@@ -55,6 +49,10 @@ nav {
   height: 50px;
   width: 50px;
   display: none;
+}
+.checkbtn:hover {
+  background: var(--color-hover);
+  transition: 0.5s;
 }
 #check {
   display: none;
@@ -67,14 +65,15 @@ label.logo {
   padding: 25px;
 }
 .material-icons {
-  font-family: 'Material Icons';
-  font-size: 30px;  /* Preferred icon size */
+  font-family: "Material Icons";
+  font-size: 30px; /* Preferred icon size */
   letter-spacing: 0px;
 }
 .search {
   color: var(--text-color);
   background-color: var(--secondary-color);
   float: right;
+  box-shadow: var(--box-shadow-lite);
   line-height: 70px;
   padding-left: 10px;
   margin-right: 15px;
@@ -83,6 +82,10 @@ label.logo {
   margin-top: 10px;
   height: 50px;
   width: 50px;
+}
+.search:hover{
+  background: var(--color-hover);
+  transition: 0.5s;
 }
 
 nav ul {
@@ -109,7 +112,6 @@ a:hover {
   transition: 0.5s;
 }
 
-
 @media (max-width: 952px) {
   label.logo {
     font-size: 40px;
@@ -124,8 +126,6 @@ a:hover {
     display: block;
   }
 
-
-
   ul {
     position: fixed;
     width: 70%;
@@ -138,25 +138,22 @@ a:hover {
   }
 
   nav ul li {
- 
-  margin-top: 5%;
-  width: 85%;
-  margin-left: 2.5%;
-  height: 50px;
-  text-align: center;
-  transition: 1.3s;
-  padding-top: 60px;
-  display: block;
-
+    margin-top: 5%;
+    width: 85%;
+    margin-left: 2.5%;
+    height: 50px;
+    text-align: center;
+    transition: 1.3s;
+    padding-top: 60px;
+    display: block;
   }
   nav ul li a {
-font-size: 25px;
+    font-size: 25px;
   }
   a:hover,
   a.active {
     background: var(--secondary-color);
     transition: 1.5s;
-
   }
   #check:checked ~ ul {
     left: 0;
@@ -168,33 +165,34 @@ section {
   height: calc(100vh - 80px);
 }
 
-.body-container1{
+.body-container1 {
   color: #1f1c2e;
   background: var(--main-color);
+  box-shadow: var(--box-shadow);
   margin-top: 20px;
   border-radius: 30px;
   margin-left: 2.5%;
   padding: 15px;
   width: 350px;
   float: left;
-  height:500px;
+  height: 500px;
 }
 
-.content-container1{
+.content-container1 {
   background: var(--secondary-color);
   margin-top: 20px;
   border-radius: 30px;
   float: left;
-  margin-left:10px;
+  margin-left: 10px;
   padding: 20px;
   width: 300px;
-  height: 120px ;
+  height: 120px;
   transition: 1.2s;
-  box-shadow: 0 0 10px rgba(112, 109, 109, 0.219);
+  box-shadow: var(--box-shadow-lite);
 }
-.content-container1:hover{
+.content-container1:hover {
   background: var(--color-hover);
   margin-top: 20px;
   margin-bottom: 20px;
-transition: .5s;
+  transition: 0.5s;
 }
