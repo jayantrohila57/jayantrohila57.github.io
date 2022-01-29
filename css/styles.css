@@ -1,0 +1,134 @@
+:root {
+  --main-container: #d6ced6;
+  --main-color: #dee5e7;
+  --text-color:rgb(0, 0, 0);
+  --secondary-color: #dfcbe6;
+  --section-color: radial-gradient(
+    circle 248px at center,
+    #16d9e3 0%,
+    #30c7ec 47%,
+    #46aef7 100%
+  );
+  --color-hover: #00a7cc60;
+  --color-active: #fff;
+  --color-active-bg: #1f1c2e;
+  --button-bg: #1f1c24;
+  --search-bar-bg: #fff;
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  background-color: var(--main-container);
+}
+nav{
+  background:var( --main-color);
+  border-radius:30px 30px 30px 30px;
+  height: 70px;
+  width: 95%;
+  margin-top:1% ;
+  margin-left: 2.5%;
+  position: relative;
+
+}
+label.logo{
+  color:var( --text-color);
+  font-size: 35px;
+  line-height: 70px;
+  padding:25px;
+}
+.search{
+  font-size: 40px;
+  color: var( --text-color);
+  float:right;
+  line-height: 70px;
+  margin-right: 20px;
+  cursor: pointer;
+
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 70px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: var( --text-color);
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: var(--secondary-color);
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 40px;
+  color: var( --text-color);
+  float:left;
+  line-height: 70px;
+  margin-left: 20px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 90%;
+    height: 85%;
+    background: var(--main-color);
+    top: 80px;
+    border-radius: 0px 30px 30px 0px ;
+    left: -100%;
+    padding-left:10% ;
+    text-align:left ;
+    transition: all 1.2s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 25px;
+  }
+  a:hover,a.active{
+    background: var(--secondary-color);
+    transition: .5s;
+
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
