@@ -56,16 +56,14 @@ nav {
 }
 
 .checkbtn {
-  float: left;
+  float:left;
+  font-size:40px;
   line-height: 72px;
-  margin-left: 12px;
-  cursor: pointer;
-  padding-left: 12px;
-  border-radius: 30px;
+  margin-left:100px;
+
   transition: 0.8s;
   margin-top: 10px;
-  height: 50px;
-  width: 50px;
+  cursor: pointer;
   display: none;
 }
 .checkbtn:hover {
