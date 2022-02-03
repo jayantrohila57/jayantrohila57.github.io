@@ -6,8 +6,10 @@
 
   --box-shadow: 0 0 20px rgba(0, 0, 0, 0.411);
   --text-shadow: 1px 0 10px rgba(85, 85, 85, 0.274);
-
   --text-color: rgb(59, 59, 59);
+
+  --font-A-:"Josefin Slab";
+  --font-B-:"Comforter";
 }
 
 * {
@@ -18,7 +20,6 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Comforter;
   background-color: var(--main-background);
 }
 .header {
@@ -29,6 +30,7 @@ body {
   background: var(--secondary-main-color);
 }
 .logo {
+  font-family: var(--font-B-);
   margin-left: 50px;
   margin-top: 5px;
   color: var(--text-color);
@@ -79,13 +81,16 @@ nav ul {
   float: right;
 }
 nav ul li {
-  display: inline-block;
+  display:inline-flex;
 }
 
 a {
-  font-size: 50px;
+  font-family: var(--font-A-);
+  position: relative;
+  float: left;
+  font-size: 30px;
   font-weight: 5px;
-  padding: 12px;
+  padding: 25px;
   color: var(--text-color);
   transition: 0.8s;
 }
@@ -95,6 +100,8 @@ a:hover {
   position: relative;
   width: auto;
   height: auto;
+  color: var(--color);
+  border-style: hidden;
 }
 
 @media (max-width: 952px) {
