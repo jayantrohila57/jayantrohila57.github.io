@@ -224,7 +224,7 @@ a:hover {
   height: 400px;
   width: 100%;
   display: flex;
-margin-top: 20px;
+  margin-top: 20px;
   border-radius: 20px;
   padding: 20px;
   background: var(--main-color);
