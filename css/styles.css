@@ -8,8 +8,8 @@
   --text-shadow: 1px 0 10px rgba(85, 85, 85, 0.274);
   --text-color: rgb(59, 59, 59);
 
-  --font-A-:"Josefin Slab";
-  --font-B-:"Comforter";
+  --font-A-: "Josefin Slab";
+  --font-B-: "Comforter";
 }
 
 * {
@@ -58,10 +58,10 @@ nav {
 }
 
 .checkbtn {
-  float:left;
-  font-size:40px;
+  float: left;
+  font-size: 40px;
   line-height: 72px;
-  margin-left:100px;
+  margin-left: 100px;
 
   transition: 0.8s;
   margin-top: 10px;
@@ -81,7 +81,7 @@ nav ul {
   float: right;
 }
 nav ul li {
-  display:inline-flex;
+  display: inline-flex;
 }
 
 a {
@@ -120,12 +120,12 @@ a:hover {
     height: 85%;
     top: 80px;
     left: -100%;
-    padding-top:50px;
-    padding-left:50px;
+    padding-top: 50px;
+    padding-left: 50px;
     z-index: 1;
     transition: 0.5s;
     border-radius: 0px 30px 30px 0px;
-    background: var(  --main-background);
+    background: var(--main-background);
   }
 
   nav ul li {
@@ -139,8 +139,8 @@ a:hover {
     font-size: 20px;
   }
   a.active {
-      color:var(--text-color);
-     }
+    color: var(--text-color);
+  }
   a:hover {
     color: var(--color);
     border-style: hidden;
@@ -164,23 +164,57 @@ a:hover {
 .main {
   height: auto;
   width: auto;
-  padding-top: 10px;
+  /* padding-top: 10px; */
   padding-bottom: 2.5%;
   background-color: var(--main-background);
 }
-.container1 {
-  height: 500px;
-  width: 95%;
+.main-info {
+  height: 400px;
+  font-size: 20px;
+  /* width: 95%; */
+  /* margin: 2.5% 2.5% 2.5% 2.5%; */
+  border-radius: 10px;
+  padding: 80px;
+}
 
-  margin: 2.5% 2.5% 2.5% 2.5%;
-  border-radius: 20px;
-  padding: 20px;
+.container1 {
+  display: flex;
+  margin-bottom: 10px;
+  /* width: 95%; */
+  /* margin: 2.5% 2.5% 2.5% 2.5%; */
+  border-radius: 10px;
+  padding: 10px;
   background: var(--main-color);
 }
+.img-boxs {
+  background-color: var(--main-background);
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 5px;
+}
+.img-a {
+  height: 500px;
+  background: linear-gradient(0.25turn, #bf9270, #ffffffd2);
+  float: left;
+  margin: 5px;
+  width: 300px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.box-info {
+  width: 300px;
+  height: 100px;
+  display:flex;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
 .container2 {
   height: 400px;
   width: 95%;
-
+  display: flex;
   margin: 2.5% 2.5% 2.5% 2.5%;
   border-radius: 20px;
   padding: 20px;
@@ -189,7 +223,7 @@ a:hover {
 .container3 {
   height: 400px;
   width: 95%;
-
+  display: flex;
   margin: 2.5% 2.5% 2.5% 2.5%;
   border-radius: 20px;
   padding: 20px;
@@ -198,7 +232,7 @@ a:hover {
 .container4 {
   height: 400px;
   width: 95%;
-
+  display: flex;
   margin: 2.5% 2.5% 2.5% 2.5%;
   border-radius: 20px;
   padding: 20px;
