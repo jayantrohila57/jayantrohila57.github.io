@@ -205,7 +205,7 @@ a:hover {
 .box-info {
   width: 300px;
   height: 100px;
-  display:flex;
+  display: flex;
   border-radius: 20px;
   margin-bottom: 10px;
   padding: 15px;
@@ -213,27 +213,27 @@ a:hover {
 
 .container2 {
   height: 400px;
-  width: 95%;
+  width: 100%;
   display: flex;
-  margin: 2.5% 2.5% 2.5% 2.5%;
+  margin-top: 20px;
   border-radius: 20px;
   padding: 20px;
   background: var(--main-color);
 }
 .container3 {
   height: 400px;
-  width: 95%;
+  width: 100%;
   display: flex;
-  margin: 2.5% 2.5% 2.5% 2.5%;
+margin-top: 20px;
   border-radius: 20px;
   padding: 20px;
   background: var(--main-color);
 }
 .container4 {
   height: 400px;
-  width: 95%;
+  width: 100%;
   display: flex;
-  margin: 2.5% 2.5% 2.5% 2.5%;
+  margin-top: 20px;
   border-radius: 20px;
   padding: 20px;
   background: var(--main-color);
