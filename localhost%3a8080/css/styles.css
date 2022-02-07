@@ -63,7 +63,7 @@ nav {
   line-height: 72px;
   margin-left: 100px;
 
-  transition: 0.8s;
+  transition: var(--transition);
   margin-top: 10px;
   cursor: pointer;
   display: none;
@@ -92,7 +92,7 @@ a {
   font-weight: 5px;
   padding: 25px;
   color: var(--text-color);
-  transition: 0.8s;
+  transition: var(--transition);
 }
 
 a.active,
