@@ -3,11 +3,9 @@
   --main-color: #ffc68c;
   --secondary-main-color: linear-gradient(117deg, #ffd6be, #e3b7a0);
   --color: #bf9270;
-
-  --box-shadow: 0 0 20px rgba(0, 0, 0, 0.411);
+  --box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.24);
   --text-shadow: 1px 0 10px rgba(85, 85, 85, 0.274);
   --text-color: rgb(59, 59, 59);
-
   --font-A-: "Josefin Slab";
   --font-B-: "Comforter";
 }
@@ -21,9 +19,11 @@
 }
 body {
   background-color: var(--main-background);
+  transition: 0.8s;
 }
 .header-back {
   background-color: #bf9270;
+  transition: 0.8s;
 }
 
 .header {
@@ -32,23 +32,27 @@ body {
   padding-top: 10px;
   border-radius: 0px 100px 100px 0px;
   background: #ffc68c;
+  transition: 0.8s;
 }
 .logo {
   font-family: var(--font-B-);
   margin-left: 50px;
   margin-top: 5px;
   color: var(--text-color);
+  transition: 0.8s;
 }
 .logo-1 {
   font-size: 80px;
   float: left;
   text-align: justify;
   color: var(--text-color);
+  transition: 0.8s;
 }
 .logo-2 {
   font-size: 10px;
   float: left;
   color: var(--text-color);
+  transition: 0.8s;
 }
 
 nav {
@@ -56,13 +60,14 @@ nav {
   margin-top: 5px;
   margin-left: 2.5%;
   position: relative;
+  transition: 0.8s;
 }
 
 .checkbtn {
   float: right;
   font-size: 40px;
   line-height: 50px;
-  background-color: #ac5410;
+  background-color: #bf9270;
   border-radius: 30px;
   padding: 0px 5px 0px 5px;
   transition: 0.8s;
@@ -73,6 +78,7 @@ nav {
 .checkbtn:hover {
   background-color: #c2631a;
   border-radius: 10px;
+  transition: 0.8s;
 }
 #check {
   display: none;
@@ -80,6 +86,7 @@ nav {
 
 nav ul {
   float: right;
+  transition: 0.8s;
 }
 nav ul li {
   display: inline-flex;
@@ -103,21 +110,25 @@ a:hover {
   height: auto;
   color: var(--color);
   border-style: hidden;
+  transition: 0.8s;
 }
 
 @media (max-width: 952px) {
   nav ul li a {
     font-size: 20px;
+    transition: 0.8s;
   }
   .box-info-1 {
     width: 0px;
     height: 0px;
     display: block;
+    transition: 0.8s;
   }
 }
 @media (max-width: 858px) {
   .checkbtn {
     display: block;
+    transition: 0.8s;
   }
 
   ul {
@@ -129,7 +140,7 @@ a:hover {
     padding-top: 50px;
     padding-left: 50px;
     z-index: 1;
-    transition: 0.5s;
+    transition: 0.8s;
     border-radius: 0px 100px 100px 0px;
     background: var(--main-background);
   }
@@ -140,17 +151,21 @@ a:hover {
     margin-left: 20px;
     margin-top: 20px;
     display: block;
+    transition: 0.8s;
   }
   nav ul li a {
     font-size: 20px;
   }
   a.active {
     color: var(--text-color);
+    transition: 0.8s;
   }
   a:hover {
     color: var(--color);
     border-style: hidden;
+    transition: 0.8s;
   }
+
 
   #check:checked ~ ul {
     left: 0;
@@ -166,16 +181,20 @@ a:hover {
   padding: 50px;
   color: var(--text-color);
   background: var(--main-color);
+  transition: 0.8s;
 }
 .footer-box {
   background: var(--color);
+  transition: 0.8s;
 }
 .main {
   height: auto;
   width: auto;
+  transition: 0.8s;
 }
 .main-info-container {
   background-color: #ffc68c;
+  transition: 0.8s;
 }
 
 .main-info {
@@ -185,93 +204,100 @@ a:hover {
   padding: 20px;
   width: 100%;
   display: block;
+  transition: 0.8s;
 }
 .box-info-1 {
   width: 0px;
   font-size: 0px;
   height: 00px;
-  float:left;
+  float: left;
   border-radius: 50px;
   padding: 20px;
+  transition: 0.8s;
 }
 
 .main-pic {
   float: left;
-  background-color: #ac5410;
   border-radius: 72px 30px 30px 70px;
   height: 150px;
   width: 270px;
+  box-shadow: var(--box-shadow);
+  transition: 0.8s;
 }
-.main-pic img{
+.main-pic img {
   width: 100%;
   border-radius: 70px 30px 30px 70px;
+  box-shadow: var(--box-shadow);
+  transition: 0.8s;
 }
 .c-box {
   background: #bf9270;
   height: auto;
   width: auto;
+  transition: 0.8s;
 }
 .c-box-2 {
   background: #ffc68c;
   height: auto;
   width: auto;
+  transition: 0.8s;
 }
 ​ .container1 {
   margin-bottom: 10px;
   margin: 2.5% 2.5% 2.5% 2.5%;
   padding: 10px;
   background: var(--secondary-main-color);
-}
-.container1 {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: 0.8s;
 }
 .img-boxs {
   background-color: #ffc68c;
   width: 100%;
   height: 100%;
+  padding: 25px;
+  display: inline-table;
   border-radius: 0px 100px 100px 0px;
-  padding: 5px;
+  transition: 0.8s;
 }
 .img-a {
-  height: 433px;
-  background-color: rgb(255, 255, 255);
   float: left;
-  margin: 2%;
-  margin-left: 10%;
+  height: 446px;
+  width: 300px;
+  margin: 0px;
+  margin-right: 0px;
+  margin-top: 30px;
   margin-bottom: 50px;
-  width: 331px;
-  border-radius: 30px;
-  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 41px;
+  box-shadow: var(--box-shadow);
+  transition: 0.8s;
 }
+
 .box-info {
-  width: 331px;
-  margin-top: 10%;
+  float: left;
+  width: 246px;
   height: 100px;
-  display: flex;
-  border-radius: 50px;
-  margin-left: 5px;
-  margin-bottom: 0px;
-  padding: 30px;
+  padding: 17px;
+  margin: 32px;
+  transition: 0.8s;
 }
 
 .container2 {
   height: auto;
   width: 100%;
-  display: flex;
   border-radius: 0px 0px 0px 0px;
   background: #ffc68c;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  transition: 0.8s;
 }
 .img-boxs-2 {
+  display: inline-table;
   background-color: #bf9270;
   width: 100%;
   height: 100%;
   border-radius: 100px 0px 0px 100px;
-  padding: 5px;
+  padding: 25px;
+  transition: 0.8s;
 }
 
 .container3 {
@@ -279,31 +305,30 @@ a:hover {
   width: 100%;
   border-radius: 0px 0px 0px 0px;
   background: #bf9270;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  transition: 0.8s;
 }
 .img-boxs-3 {
+  display: inline-table;
   background-color: #ffc68c;
   width: 100%;
   height: 100%;
   border-radius: 0px 100px 100px 0px;
-  padding: 5px;
+  padding: 25px;
+  transition: 0.8s;
 }
 .container4 {
   height: auto;
   width: 100%;
-  display: flex;
   border-radius: 0px 0px 0px 0px;
   background-color: #ffc68c;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  transition: 0.8s;
 }
 .img-boxs-4 {
+  display: inline-table;
   background: #bf9270;
   width: 100%;
   height: 100%;
   border-radius: 100px 0px 0px 100px;
-  padding: 5px;
+  padding: 25px;
+  transition: 0.8s;
 }
