@@ -87,7 +87,7 @@ nav {
 }
 .checkbtn:hover {
   border-radius: 10px;
-  transform: rotate(10deg);
+  transform: rotate(5deg);
   transition: var(--transition);
 }
 #check {
@@ -106,9 +106,9 @@ a {
   font-family: var(--font-A-);
   position: relative;
   float: left;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 5px;
-  padding: 25px;
+  padding:40px 40px 0px 20px;
   color: var(--text-color);
   transition: var(--transition);
 }
@@ -118,7 +118,7 @@ a:hover {
   position: relative;
   width: auto;
   height: auto;
-  color: var(--color);
+  color: #dd9c4c;
   border-style: hidden;
   transition: var(--transition);
 }
@@ -147,13 +147,14 @@ a:hover {
     height: 85%;
     top: 80px;
     left: -100%;
-    padding-top: 50px;
-    padding-left: 50px;
+    padding-top: 40px;
+    padding-left: 40px;
     z-index: 1;
+    font-size: 40px;
     backdrop-filter: blur(3px);
     transition: var(--transition);
     border-radius: 0px 50px 50px 0px;
-    background: #ffffffc0;
+    background: #b9b9b9de;
   }
 
   nav ul li {
@@ -165,14 +166,13 @@ a:hover {
     transition: var(--transition);
   }
   nav ul li a {
-    font-size: 20px;
+    font-size: 30px;
   }
   a.active {
-    color: var(--text-color);
+    color: #dd9c4c;
     transition: var(--transition);
   }
   a:hover {
-    color: var(--color);
     border-style: hidden;
     transition: var(--transition);
   }
@@ -232,8 +232,8 @@ a:hover {
   transition: var(--transition);
 }
 .main-pic:hover{
-  border-radius: 80px;
-  transform: rotate(5deg);
+  border-radius: 60px;
+  transform: rotate(2deg);
 }
 .c-box {
   background: var(--main-color);
