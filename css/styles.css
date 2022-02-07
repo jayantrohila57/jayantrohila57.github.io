@@ -17,6 +17,9 @@
   list-style: none;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior:smooth;
+}
 body {
   background-color: var(--main-background);
   transition: 0.8s;
@@ -225,9 +228,10 @@ a:hover {
   transition: 0.8s;
 }
 .main-pic img {
-  width: 100%;
-  border-radius: 70px 30px 30px 70px;
-  box-shadow: var(--box-shadow);
+ width: 100%;
+  object-fit: contain;
+  image-rendering: auto;
+  border-radius:inherit;
   transition: 0.8s;
 }
 .c-box {
@@ -262,18 +266,25 @@ a:hover {
 }
 .img-a {
   float: left;
-  height: 446px;
-  width: 300px;
-  margin: 0px;
-  margin-right: 0px;
-  margin-top: 30px;
-  margin-bottom: 50px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 41px;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 50px;
+  margin-right: 2.5%;
+  margin-bottom: 20px;
+  background-color:none;
+  border-radius: 50px;
+
+  transition: 0.8s;
+}
+.img-a img {
+  width: 100%;
+  height: 99%;
+  object-fit: contain;
+  image-rendering: auto;
+  border-radius:inherit;
   box-shadow: var(--box-shadow);
   transition: 0.8s;
 }
-
 .box-info {
   float: left;
   width: 246px;
