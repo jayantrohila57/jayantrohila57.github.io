@@ -109,6 +109,11 @@ a:hover {
   nav ul li a {
     font-size: 20px;
   }
+  .box-info-1 {
+    width: 0px;
+    height: 0px;
+    display: block;
+  }
 }
 @media (max-width: 858px) {
   .checkbtn {
@@ -177,14 +182,15 @@ a:hover {
   background-color: #bf9270;
   border-radius: 100px 0px 0px 100px;
   height: 400px;
-  padding: 50px;
+  padding: 20px;
   width: 100%;
   display: block;
 }
 .box-info-1 {
-  width: 300px;
-  height: 50px;
-  float: right;
+  width: 0px;
+  font-size: 0px;
+  height: 00px;
+  float:left;
   border-radius: 50px;
   padding: 20px;
 }
@@ -192,11 +198,14 @@ a:hover {
 .main-pic {
   float: left;
   background-color: #ac5410;
-  border-radius: 72px 30px 30px 30px;
-  height: 250px;
-  width: 250px;
+  border-radius: 72px 30px 30px 70px;
+  height: 150px;
+  width: 270px;
 }
-
+.main-pic img{
+  width: 100%;
+  border-radius: 70px 30px 30px 70px;
+}
 .c-box {
   background: #bf9270;
   height: auto;
