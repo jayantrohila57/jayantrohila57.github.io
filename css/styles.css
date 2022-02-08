@@ -1,466 +1,502 @@
 :root {
-  --main-background: #EEEEEE;
-  --main-color: #EEEEEE;
-  --color: #65dde4;
-  --box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-  --text-color: rgb(59, 59, 59);
-  --font-A-: "Josefin Slab";
-  --font-B-: "Comforter";
-  --transition: 1s;
+    --main-background: #eeeeee;
+    --main-color: #eeeeee;
+    --color: #65dde4;
+    --box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    --text-color: rgb(59, 59, 59);
+    --font-A-: "Josefin Slab";
+    --font-B-: "Comforter";
+    --transition: 1s;
 }
 
 .material-icons-round {
-  font-family: "Material Icons";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 30px; /* Preferred icon size */
-  display: inline-block;
-  line-height: 0.9;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-  font-feature-settings: "liga";
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 0.9;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: "liga";
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
+
 html {
-  scroll-behavior: smooth;
-  font-family: "Josefin Slab", "Comforter";
+    scroll-behavior: smooth;
+    font-family: "Josefin Slab", "Comforter";
 }
+
 body {
-  background-color: var(--main-background);
-  transition: var(--transition);
+    background-color: var(--main-background);
+    transition: var(--transition);
 }
+
 .header-back {
-  background-color: var(--color);
-  transition: var(--transition);
-  height: 100%;
-  width: 100%;
+    background-color: var(--color);
+    transition: var(--transition);
+    height: 100%;
+    width: 100%;
 }
 
 .header {
-  height: 120px;
-  width: 100%;
-  padding-top: 0px;
-  border-radius: 0px 0px 50px 0px;
-  background: var(--main-color);
-  transition: var(--transition);
+    height: 120px;
+    width: 100%;
+    padding-top: 0px;
+    border-radius: 0px 0px 50px 0px;
+    background: var(--main-color);
+    transition: var(--transition);
 }
+
 .logo {
-  font-family: var(--font-B-);
-  margin-left: 50px;
-  margin-top: 5px;
-  color: var(--text-color);
-  transition: var(--transition);
+    font-family: var(--font-B-);
+    margin-left: 50px;
+    margin-top: 5px;
+    color: var(--text-color);
+    transition: var(--transition);
 }
+
 .logo-1 {
-  font-size: 80px;
-  float: left;
-  text-align: justify;
-  color: var(--text-color);
-  transition: var(--transition);
+    font-size: 80px;
+    float: left;
+    text-align: justify;
+    color: var(--text-color);
+    transition: var(--transition);
 }
+
 .logo-1:hover {
-  color: var(--color);
+    color: var(--color);
 }
 
 .logo-2 {
-  font-size: 8px;
-  float: left;
-  color: var(--text-color);
-  transition: var(--transition);
+    font-size: 8px;
+    float: left;
+    color: var(--text-color);
+    transition: var(--transition);
 }
 
 nav {
-  width: 95%;
-  margin-top: 5px;
-  margin-left: 2.5%;
-  position: relative;
-  transition: var(--transition);
+    width: 95%;
+    margin-top: 5px;
+    margin-left: 2.5%;
+    position: relative;
+    transition: var(--transition);
 }
 
 .checkbtn {
-  float: right;
-  font-size: 40px;
-  line-height: 50px;
-  background-color: var(--color);
-  border-radius: 30px;
-  padding: 0px 5px 0px 5px;
-  transition: var(--transition);
-  margin: 20px 20px 0px 0px;
-  cursor: pointer;
-  display: none;
+    float: right;
+    font-size: 40px;
+    line-height: 50px;
+    background-color: var(--color);
+    border-radius: 30px;
+    padding: 0px 5px 0px 5px;
+    transition: var(--transition);
+    margin: 20px 20px 0px 0px;
+    cursor: pointer;
+    display: none;
 }
+
 .checkbtn:hover {
-  border-radius: 10px;
-  transform: rotate(5deg);
-  transition: var(--transition);
+    border-radius: 10px;
+    transform: rotate(5deg);
+    transition: var(--transition);
 }
+
 #check {
-  display: none;
+    display: none;
 }
 
 nav ul {
-  float: right;
-  transition: var(--transition);
+    float: right;
+    transition: var(--transition);
 }
+
 nav ul li {
-  display: inline-flex;
+    display: inline-flex;
 }
 
 a {
-  font-family: var(--font-A-);
-  position: relative;
-  float: left;
-  font-size: 40px;
-  font-weight: 5px;
-  padding: 40px 40px 0px 20px;
-  color: var(--text-color);
-  transition: var(--transition);
+    font-family: var(--font-A-);
+    position: relative;
+    float: left;
+    font-size: 40px;
+    font-weight: 5px;
+    padding: 40px 40px 0px 20px;
+    color: var(--text-color);
+    transition: var(--transition);
 }
 
 a.active,
 a:hover {
-  position: relative;
-  width: auto;
-  height: auto;
-  color: #00ADB5;
-  border-style: hidden;
-  transition: var(--transition);
+    position: relative;
+    width: auto;
+    height: auto;
+    color: #00adb5;
+    border-style: hidden;
+    transition: var(--transition);
 }
 
 @media (max-width: 952px) {
-  nav ul li a {
-    font-size: 20px;
-    transition: var(--transition);
-  }
-  .box-info-1 {
-    width: 0px;
-    height: 0px;
-    display: block;
-    transition: var(--transition);
-  }
+    nav ul li a {
+        font-size: 20px;
+        transition: var(--transition);
+    }
+    .box-info-1 {
+        width: 0px;
+        height: 0px;
+        display: block;
+        transition: var(--transition);
+    }
 }
+
 @media (max-width: 858px) {
-  .checkbtn {
-    display: block;
-    transition: var(--transition);
-  }
-
-  ul {
-    position: fixed;
-    width: 70%;
-    height: 85%;
-    top: 80px;
-    left: -100%;
-    padding-top: 40px;
-    padding-left: 40px;
-    z-index: 1;
-    font-size: 40px;
-    backdrop-filter: blur(3px);
-    transition: var(--transition);
-    border-radius: 0px 50px 50px 0px;
-    background: #ffffffa6;
-  }
-
-  nav ul li {
-    padding: 1px 10px 1px 10px;
-    text-decoration: none;
-    margin-left: 20px;
-    margin-top: 20px;
-    display: block;
-    transition: var(--transition);
-  }
-  nav ul li a {
-    font-size: 30px;
-  }
-  a.active {
-    color: #00ADB5;
-    transition: var(--transition);
-  }
-  a:hover {
-    border-style: hidden;
-    transition: var(--transition);
-  }
-
-  #check:checked ~ ul {
-    left: 0;
-  }
+    .checkbtn {
+        display: block;
+        transition: var(--transition);
+    }
+    ul {
+        position: fixed;
+        width: 70%;
+        height: 85%;
+        top: 80px;
+        left: -100%;
+        padding-top: 40px;
+        padding-left: 40px;
+        z-index: 1;
+        font-size: 40px;
+        backdrop-filter: blur(3px);
+        transition: var(--transition);
+        border-radius: 0px 50px 50px 0px;
+        background: #ffffffa6;
+    }
+    nav ul li {
+        padding: 1px 10px 1px 10px;
+        text-decoration: none;
+        margin-left: 20px;
+        margin-top: 20px;
+        display: block;
+        transition: var(--transition);
+    }
+    nav ul li a {
+        font-size: 30px;
+    }
+    a.active {
+        color: #00adb5;
+        transition: var(--transition);
+    }
+    a:hover {
+        border-style: hidden;
+        transition: var(--transition);
+    }
+    #check:checked~ul {
+        left: 0;
+    }
 }
 
 .footer {
-  height: 100px;
-  width: auto;
-  text-align: center;
-  font-size: 15px;
-  border-radius: 50px 0px 0px 0px;
-  padding: 30px;
-  text-align: center;
-  color: var(--text-color);
-  background: var(--color);
-  transition: var(--transition);
+    height: 100px;
+    width: auto;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 50px 0px 0px 0px;
+    padding: 30px;
+    text-align: center;
+    color: var(--text-color);
+    background: var(--color);
+    transition: var(--transition);
 }
+
 .footer-box {
-  background: var(--main-color);
-  transition: var(--transition);
+    background: var(--main-color);
+    transition: var(--transition);
 }
+
 .main {
-  height: auto;
-  width: auto;
-  transition: var(--transition);
+    height: auto;
+    width: auto;
+    transition: var(--transition);
 }
+
 .main-info-container {
-  background-color: var(--main-color);
-  transition: var(--transition);
+    background-color: var(--main-color);
+    transition: var(--transition);
 }
 
 .main-info {
-  background-color: var(--color);
-  border-radius: 50px 0px 0px 50px;
-  height: 100%;
-  padding: 20px;
-  width: 100%;
-  display: inline-table;
-  transition: var(--transition);
+    background-color: var(--color);
+    border-radius: 50px 0px 0px 50px;
+    height: 100%;
+    padding: 20px;
+    width: 100%;
+    display: inline-table;
+    transition: var(--transition);
 }
+
 .main-pic {
-  float: left;
-  border-radius: 50px 30px 30px 50px;
-  width: 100%;
-  max-width: 500px;
-  transition: var(--transition);
+    float: left;
+    border-radius: 50px 30px 30px 50px;
+    width: 100%;
+    max-width: 500px;
+    transition: var(--transition);
 }
+
 .main-pic img {
-  width: inherit;
-  object-fit: contain;
-  image-rendering: auto;
-  border-radius: inherit;
-  box-shadow: var(--box-shadow);
-  transition: var(--transition);
+    width: inherit;
+    object-fit: contain;
+    image-rendering: auto;
+    border-radius: inherit;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
 }
+
 .main-pic:hover {
-  border-radius: 60px;
-  transform: rotate(2deg);
+    border-radius: 60px;
+    transform: rotate(2deg);
 }
 
 .c-box {
-  background: var(--color);
-  height: auto;
-  width: auto;
-  transition: var(--transition);
-}
-.c-box-2 {
-  background: var(--main-color);
-  height: auto;
-  width: auto;
-  transition: var(--transition);
-}
-​ .container1 {
-  margin-bottom: 10px;
-  margin: 2.5% 2.5% 2.5% 2.5%;
-  padding: 10px;
-  background: var(--secondary-main-color);
-  width: 100%;
-  height: 100%;
-  transition: var(--transition);
-}
-.img-boxs {
-  background-color: var(--main-color);
-  width: 100%;
-  height: 100%;
-  padding: 25px;
-  display: inline-table;
-  border-radius: 0px 50px 50px 0px;
-  transition: var(--transition);
-}
-.img-a {
-  float: left;
-  width: 100%;
-  max-width: 550px;
-  margin-top: 10px;
-  margin-right: 2.5%;
-  margin-bottom: 20px;
-  background-color: none;
-  border-radius: 50px;
-  transition: var(--transition);
-}
-.img-a img {
-  min-width: 300px;
-  width: 100%;
-  max-width: 600px;
-  object-fit: contain;
-  image-resolution: from-image 100dpi;
-  image-rendering: auto;
-  border-radius: inherit;
-  box-shadow: var(--box-shadow);
-  transition: var(--transition);
-}
-.img-a img:hover {
-  border-radius: 30px;
-  transform: rotate(3deg);
+    background: var(--color);
+    height: auto;
+    width: auto;
+    transition: var(--transition);
 }
 
-p{
-  font-size: 20px;
-  text-align: center;
+.c-box-2 {
+    background: var(--main-color);
+    height: auto;
+    width: auto;
+    transition: var(--transition);
 }
+
+​ .container1 {
+    margin-bottom: 10px;
+    margin: 2.5% 2.5% 2.5% 2.5%;
+    padding: 10px;
+    background: var(--secondary-main-color);
+    width: 100%;
+    height: 100%;
+    transition: var(--transition);
+}
+
+.img-boxs {
+    background-color: var(--main-color);
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    display: inline-table;
+    border-radius: 0px 50px 50px 0px;
+    transition: var(--transition);
+}
+
+.img-a {
+    float: left;
+    width: 100%;
+    max-width: 550px;
+    margin-top: 10px;
+    margin-right: 2.5%;
+    margin-bottom: 20px;
+    background-color: none;
+    border-radius: 50px;
+    transition: var(--transition);
+}
+
+.img-a img {
+    min-width: 300px;
+    width: 100%;
+    max-width: 600px;
+    object-fit: contain;
+    image-resolution: from-image 100dpi;
+    image-rendering: auto;
+    border-radius: inherit;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.img-a img:hover {
+    border-radius: 30px;
+    transform: rotate(3deg);
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
 .box-info {
-  float: left;
-  min-width: 300px;
-  width: 100%;
-  max-width: 550px;
-  height: 180px;
-  padding: 30px;
-  background-color: #ffffff2f;
-  border-radius: 30px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  margin-right: 5%;
-  transition: var(--transition);
-  
-  box-shadow: var(--box-shadow);
+    float: left;
+    min-width: 300px;
+    width: 100%;
+    max-width: 550px;
+    height: 180px;
+    padding: 30px;
+    background-color: #ffffff2f;
+    border-radius: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 5%;
+    transition: var(--transition);
+    box-shadow: var(--box-shadow);
 }
+
 .box-info:hover {
-  border-radius: 30px;
-  transform: rotate(-3deg);
+    border-radius: 30px;
+    transform: rotate(-3deg);
 }
+
 .container2 {
-  height: auto;
-  width: 100%;
-  border-radius: 0px 0px 0px 0px;
-  background: var(--main-color);
-  transition: var(--transition);
+    height: auto;
+    width: 100%;
+    border-radius: 0px 0px 0px 0px;
+    background: var(--main-color);
+    transition: var(--transition);
 }
+
 .img-boxs-2 {
-  display: inline-table;
-  background-color: var(--color);
-  width: 100%;
-  height: 100%;
-  border-radius: 50px 0px 0px 50px;
-  padding: 25px;
-  transition: var(--transition);
+    display: inline-table;
+    background-color: var(--color);
+    width: 100%;
+    height: 100%;
+    border-radius: 50px 0px 0px 50px;
+    padding: 25px;
+    transition: var(--transition);
 }
+
 .container3 {
-  height: auto;
-  width: 100%;
-  border-radius: 0px 0px 0px 0px;
-  background: var(--color);
-  transition: var(--transition);
+    height: auto;
+    width: 100%;
+    border-radius: 0px 0px 0px 0px;
+    background: var(--color);
+    transition: var(--transition);
 }
+
 .img-boxs-3 {
-  display: inline-table;
-  background-color: var(--main-color);
-  width: 100%;
-  height: 100%;
-  border-radius: 0px 50px 50px 0px;
-  padding: 25px;
-  transition: var(--transition);
+    display: inline-table;
+    background-color: var(--main-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 50px 50px 0px;
+    padding: 25px;
+    transition: var(--transition);
 }
+
 .container4 {
-  height: auto;
-  width: 100%;
-  border-radius: 0px 0px 0px 0px;
-  background-color: var(--main-color);
-  transition: var(--transition);
+    height: auto;
+    width: 100%;
+    border-radius: 0px 0px 0px 0px;
+    background-color: var(--main-color);
+    transition: var(--transition);
 }
+
 .img-boxs-4 {
-  display: inline-table;
-  background: var(--color);
-  width: 100%;
-  height: 100%;
-  border-radius: 50px 0px 0px 30px;
-  padding: 25px;
-  transition: var(--transition);
+    display: inline-table;
+    background: var(--color);
+    width: 100%;
+    height: 100%;
+    border-radius: 50px 0px 0px 30px;
+    padding: 25px;
+    transition: var(--transition);
 }
+
 .social-back {
-  height: auto;
-  width: 100%;
-  border-radius: 0px 0px 0px 0px;
-  background: var(--color);
-  transition: var(--transition);
+    height: auto;
+    width: 100%;
+    border-radius: 0px 0px 0px 0px;
+    background: var(--color);
+    transition: var(--transition);
 }
+
 .social-box {
-  display: inline-table;
-  background-color: var(--main-color);
-  width: 100%;
-  height: 100%;
-  transition: var(--transition);
+    display: inline-table;
+    background-color: var(--main-color);
+    width: 100%;
+    height: 100%;
+    transition: var(--transition);
 }
+
 .social-main {
-  width: 100%;
-  height: 100%;
-  padding: 15px;
-  display: inline-table;
-  border-radius: 0px 30px 30px 0px;
-  transition: var(--transition);
-  background-color: var(--main-color);
-  transition: var(--transition);
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: inline-table;
+    border-radius: 0px 30px 30px 0px;
+    transition: var(--transition);
+    background-color: var(--main-color);
+    transition: var(--transition);
 }
+
 .social-info {
-  width: 100%;
-  height: 100%;
-  padding:20px;
-  display: inline-table;
-  background: var(--color);
-  border-radius: 30px 30px 30px 30px;
-  transition: var(--transition);
-  box-shadow: var(--box-shadow);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: inline-table;
+    background: var(--color);
+    border-radius: 30px 30px 30px 30px;
+    transition: var(--transition);
+    box-shadow: var(--box-shadow);
 }
+
 .social-info:hover {
-  background-color: #ffffffc2;
+    background-color: #ffffffc2;
 }
-.icon-box{
-float:left;
-  height: 50px;
-  margin-top: 30px;
-  width:400px;
+
+.icon-box {
+    float: left;
+    height: 50px;
+    margin-top: 30px;
+    width: 400px;
 }
-.icon-1{
-float:left;
-margin-left: 10px;
-margin-right: 20px;
+
+.icon-1 {
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
 }
-.icon-label{
-  float: left;
-  margin-top: 2px;
-  height: 30px;
-  width: 80px;
-  margin-bottom: 10px;
+
+.icon-label {
+    float: left;
+    margin-top: 2px;
+    height: 30px;
+    width: 80px;
+    margin-bottom: 10px;
 }
 
 .fa {
-  float:left;
-  padding: 22px;
-  width: 60px;
-  height: 60px;
-  margin:5px;
-  text-align: center;
-  text-shadow: var(--box-shadow);
-  text-decoration: none;
-  box-shadow: var(--box-shadow);
-  border-radius: 50%;
-  background: var(--main-color);
-  transition: var(--transition);
+    float: left;
+    padding: 22px;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    text-align: center;
+    text-shadow: var(--box-shadow);
+    text-decoration: none;
+    box-shadow: var(--box-shadow);
+    border-radius: 50%;
+    background: var(--main-color);
+    transition: var(--transition);
 }
+
 .fa:hover {
-  border-radius: 10px;
-  transform: rotate(20deg);
-  background-color: #5e5e5e88;
-  box-shadow: var(--box-shadow);
-  transition: var(--transition);
+    border-radius: 10px;
+    transform: rotate(20deg);
+    background-color: #5e5e5e88;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
 }
