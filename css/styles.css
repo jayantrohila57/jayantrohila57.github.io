@@ -1,7 +1,7 @@
 :root {
-  --main-background: #97938e;
-  --main-color: #97938e;
-  --color: #cccccc;
+  --main-background: #EEEEEE;
+  --main-color: #EEEEEE;
+  --color: #65dde4;
   --box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   --text-color: rgb(59, 59, 59);
   --font-A-: "Josefin Slab";
@@ -80,7 +80,7 @@ body {
 }
 
 .logo-2 {
-  font-size: 10px;
+  font-size: 8px;
   float: left;
   color: var(--text-color);
   transition: var(--transition);
@@ -139,7 +139,7 @@ a:hover {
   position: relative;
   width: auto;
   height: auto;
-  color: #dd9c4c;
+  color: #00ADB5;
   border-style: hidden;
   transition: var(--transition);
 }
@@ -175,7 +175,7 @@ a:hover {
     backdrop-filter: blur(3px);
     transition: var(--transition);
     border-radius: 0px 50px 50px 0px;
-    background: #b9b9b9de;
+    background: #ffffffa6;
   }
 
   nav ul li {
@@ -190,7 +190,7 @@ a:hover {
     font-size: 30px;
   }
   a.active {
-    color: #dd9c4c;
+    color: #00ADB5;
     transition: var(--transition);
   }
   a:hover {
@@ -257,6 +257,7 @@ a:hover {
   border-radius: 60px;
   transform: rotate(2deg);
 }
+
 .c-box {
   background: var(--color);
   height: auto;
@@ -313,19 +314,26 @@ a:hover {
   border-radius: 30px;
   transform: rotate(3deg);
 }
+
+p{
+  font-size: 20px;
+  text-align: center;
+}
 .box-info {
   float: left;
   min-width: 300px;
   width: 100%;
   max-width: 550px;
   height: 180px;
-  padding: 17px;
+  padding: 30px;
   background-color: #ffffff2f;
   border-radius: 30px;
   margin-top: 25px;
   margin-bottom: 25px;
   margin-right: 5%;
   transition: var(--transition);
+  
+  box-shadow: var(--box-shadow);
 }
 .box-info:hover {
   border-radius: 30px;
@@ -444,6 +452,7 @@ margin-right: 20px;
   text-align: center;
   text-shadow: var(--box-shadow);
   text-decoration: none;
+  box-shadow: var(--box-shadow);
   border-radius: 50%;
   background: var(--main-color);
   transition: var(--transition);
