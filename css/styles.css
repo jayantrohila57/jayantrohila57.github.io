@@ -2,7 +2,7 @@
     --main-background: #eeeeee;
     --main-color: #eeeeee;
     --color: #65dde4;
-    --box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    --box-shadow: 0 0 30px rgba(0, 0, 0, 0.164);
     --text-color: rgb(59, 59, 59);
     --font-A-: "Josefin Slab";
     --font-B-: "Comforter";
@@ -347,8 +347,8 @@ p {
     max-width: 550px;
     height: 180px;
     padding: 30px;
-    background-color: #ffffff2f;
-    border-radius: 30px;
+    background-color: #ffffff49;
+    border-radius: 50px;
     margin-top: 25px;
     margin-bottom: 25px;
     margin-right: 5%;
@@ -357,8 +357,9 @@ p {
 }
 
 .box-info:hover {
-    border-radius: 30px;
+    border-radius: 20px;
     transform: rotate(-3deg);
+    background-color: #ffffff;
 }
 
 .container2 {
