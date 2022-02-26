@@ -4,10 +4,7 @@
 	color: var(--text-color);
 	font-weight: bold;
 	font-family: "Questrial", sans-serif;
-
 }
-
-
 #display h1 {
 	-webkit-background-clip: text;
 	background-clip: text;
@@ -15,12 +12,13 @@
 }
 
 #title-name {
-height: 100vh;
-width: 95%;
+	height: 100vh;
+	width: 350px;
 	display: flex;
 	flex-wrap: wrap;
+	mask-position: 350px;
 	align-content: center;
-	overflow: inherit;
+	overflow: hidden;
 	justify-content: center;
 	align-items: center;
 }
@@ -31,6 +29,7 @@ width: 95%;
 	position: absolute;
 	border: 2px solid white;
 	animation: ani 5s infinite;
+	overflow: hidden;
 }
 @keyframes ani {
 	0% {
@@ -41,7 +40,8 @@ width: 95%;
 	}
 	50% {
 		border-radius: 280px 100px 120px 260px;
-		height: 620px;
+		height: 200px;
+		max-height: 580px;
 		width: 200px;
 	}
 	100% {
@@ -57,6 +57,7 @@ width: 95%;
 	z-index: 2;
 	position: absolute;
 	animation: ani2 5s infinite;
+	overflow: hidden;
 }
 @keyframes ani2 {
 	0% {
@@ -67,7 +68,8 @@ width: 95%;
 	}
 	50% {
 		border-radius: 50px;
-		height: 580px;
+		height: 200px;
+		max-height: 520px;
 		width: 200px;
 	}
 	100% {
@@ -83,6 +85,7 @@ width: 95%;
 	position: absolute;
 	border: 2px solid white;
 	animation: ani3 5s infinite;
+	overflow: hidden;
 }
 @keyframes ani3 {
 	0% {
@@ -93,7 +96,8 @@ width: 95%;
 	}
 	50% {
 		border-radius: 50px;
-		height: 480px;
+		height: 200px;
+		max-height: 490px;
 		width: 200px;
 	}
 	100% {
@@ -109,6 +113,7 @@ width: 95%;
 	position: absolute;
 	border: 2px solid white;
 	animation: ani4 5s infinite;
+	overflow: hidden;
 }
 @keyframes ani4 {
 	0% {
@@ -119,7 +124,8 @@ width: 95%;
 	}
 	50% {
 		border-radius: 50px;
-		height: 550px;
+		height: 200px;
+		max-height: 550px;
 		width: 200px;
 	}
 	100% {
@@ -135,6 +141,7 @@ width: 95%;
 	position: absolute;
 	border: 2px solid white;
 	animation: ani5 5s infinite;
+	overflow: hidden;
 }
 @keyframes ani5 {
 	0% {
@@ -145,7 +152,8 @@ width: 95%;
 	}
 	50% {
 		border-radius: 50px;
-		height: 450px;
+		height: 200px;
+		max-height: 450px;
 		width: 200px;
 	}
 	100% {
@@ -155,55 +163,139 @@ width: 95%;
 		border-radius: 200px;
 	}
 }
-.circle-box6 {
+
+@media (min-width: 450px) {
+
+@keyframes ani {
+	0% {
+		transform: rotate(360deg);
+		height: 200px;
+		width: 200px;
+		border-radius: 180px;
+	}
+	50% {
+		border-radius: 280px 100px 120px 260px;
+		height: 200px;
+		max-height: 380px;
+		width: 200px;
+	}
+	100% {
+		transform: rotate(0deg);
+		height: 200px;
+		width: 200px;
+		border-radius: 180px;
+	}
+}
+.circle-box2 {
+	border-radius: 40px;
+	border: 2px dotted white;
+	z-index: 2;
+	position: absolute;
+	animation: ani2 5s infinite;
+	overflow: hidden;
+}
+@keyframes ani2 {
+	0% {
+		transform: rotate(100deg);
+		height: 200px;
+		width: 200px;
+		border-radius: 160px;
+	}
+	50% {
+		border-radius: 50px;
+		height: 200px;
+		max-height: 320px;
+		width: 200px;
+	}
+	100% {
+		transform: rotate(470deg);
+		height: 200px;
+		width: 200px;
+		border-radius: 160px;
+	}
+}
+.circle-box3 {
 	z-index: 3;
 	border-radius: 30px;
 	position: absolute;
 	border: 2px solid white;
-	animation: ani6 5s infinite;
+	animation: ani3 5s infinite;
+	overflow: hidden;
 }
-@keyframes ani6 {
+@keyframes ani3 {
 	0% {
-		transform: rotate(30deg);
+		transform: rotate(300deg);
 		height: 200px;
 		width: 200px;
 		border-radius: 200px;
 	}
 	50% {
 		border-radius: 50px;
-		height: 350px;
+		height: 200px;
+		max-height: 390px;
 		width: 200px;
 	}
 	100% {
-		transform: rotate(390deg);
+		transform: rotate(160deg);
 		height: 200px;
 		width: 200px;
 		border-radius: 200px;
 	}
 }
-.circle-box7 {
+.circle-box4 {
 	z-index: 3;
 	border-radius: 30px;
 	position: absolute;
-	border: 2px dotted white;
-	animation: ani7 5s infinite;
+	border: 2px solid white;
+	animation: ani4 5s infinite;
+	overflow: hidden;
 }
-@keyframes ani7 {
+@keyframes ani4 {
 	0% {
-		transform: rotate(400deg);
+		transform: rotate(380deg);
 		height: 200px;
 		width: 200px;
 		border-radius: 200px;
 	}
 	50% {
 		border-radius: 50px;
-		height: 400px;
+		height: 200px;
+		max-height: 350px;
 		width: 200px;
 	}
 	100% {
-		transform: rotate(40deg);
+		transform: rotate(20deg);
 		height: 200px;
 		width: 200px;
 		border-radius: 200px;
 	}
+}
+.circle-box5 {
+	z-index: 3;
+	border-radius: 30px;
+	position: absolute;
+	border: 2px solid white;
+	animation: ani5 5s infinite;
+	overflow: hidden;
+}
+@keyframes ani5 {
+	0% {
+		transform: rotate(380deg);
+		height: 200px;
+		width: 200px;
+		border-radius: 200px;
+	}
+	50% {
+		border-radius: 50px;
+		height: 200px;
+		max-height: 370px;
+		width: 200px;
+	}
+	100% {
+		transform: rotate(20deg);
+		height: 200px;
+		width: 200px;
+		border-radius: 200px;
+	}
+}
 }
