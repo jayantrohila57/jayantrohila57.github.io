@@ -2,23 +2,26 @@
 	text-align: center;
 	font-size: 50px;
 	color: var(--text-color);
+	transition: 8s;
 	font-weight: bold;
 	font-family: "Questrial", sans-serif;
 }
 #display h1 {
 	-webkit-background-clip: text;
 	background-clip: text;
+	transition: 8s;
 	-webkit-text-fill-color: #fff;
 }
-
+#display h1:hover {
+text-transform: uppercase;
+transition: 8s;
+}
 #title-name {
 	height: 100vh;
-	width: 350px;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	mask-position: 350px;
 	align-content: center;
-	overflow: hidden;
 	justify-content: center;
 	align-items: center;
 }
@@ -40,8 +43,8 @@
 	}
 	50% {
 		border-radius: 280px 100px 120px 260px;
-		height: 200px;
-		max-height: 580px;
+	box-shadow: 0px 0px 300px rgba(255, 255, 255, 0.288);
+		height: 580px;
 		width: 200px;
 	}
 	100% {
@@ -68,8 +71,7 @@
 	}
 	50% {
 		border-radius: 50px;
-		height: 200px;
-		max-height: 520px;
+		height: 520px;
 		width: 200px;
 	}
 	100% {
@@ -83,7 +85,8 @@
 	z-index: 3;
 	border-radius: 30px;
 	position: absolute;
-	border: 2px solid white;
+	border: 2.5px solid white;
+	border-style: dashed;
 	animation: ani3 5s infinite;
 	overflow: hidden;
 }
@@ -96,8 +99,7 @@
 	}
 	50% {
 		border-radius: 50px;
-		height: 200px;
-		max-height: 490px;
+		height: 490px;
 		width: 200px;
 	}
 	100% {
@@ -111,25 +113,24 @@
 	z-index: 3;
 	border-radius: 30px;
 	position: absolute;
-	border: 2px solid white;
+	border: 3px dotted white;
 	animation: ani4 5s infinite;
 	overflow: hidden;
 }
 @keyframes ani4 {
 	0% {
-		transform: rotate(380deg);
+		transform: rotate(280deg);
 		height: 200px;
 		width: 200px;
 		border-radius: 200px;
 	}
 	50% {
 		border-radius: 50px;
-		height: 200px;
-		max-height: 550px;
+		height: 550px;
 		width: 200px;
 	}
 	100% {
-		transform: rotate(20deg);
+		transform: rotate(120deg);
 		height: 200px;
 		width: 200px;
 		border-radius: 200px;
@@ -152,8 +153,7 @@
 	}
 	50% {
 		border-radius: 50px;
-		height: 200px;
-		max-height: 450px;
+		height: 450px;
 		width: 200px;
 	}
 	100% {
@@ -164,8 +164,16 @@
 	}
 }
 
-@media (min-width: 450px) {
-
+@media (max-width: 600px) {
+#title-name {
+	height: 60vh;
+	width: 350px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
 @keyframes ani {
 	0% {
 		transform: rotate(360deg);
@@ -189,6 +197,7 @@
 .circle-box2 {
 	border-radius: 40px;
 	border: 2px dotted white;
+	box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.288);
 	z-index: 2;
 	position: absolute;
 	animation: ani2 5s infinite;

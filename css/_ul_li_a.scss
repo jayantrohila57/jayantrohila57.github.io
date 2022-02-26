@@ -1,12 +1,32 @@
 a {
 	color: white;
 	text-decoration: none;
+	  margin:2px;
+  transition: 3s;
+}
+
+a:hover{
+	color: rgb(177, 177, 177);
+  text-decoration: underline;
+    margin:2px;
+  transition: 3s;
 }
 
 ul {
 	list-style: none;
+	  transition: 3s;
+	  margin-right: 5px;
+	  padding: 20px;
 }
 
-ul li:before {
-	content: "";
+ul li{
+	border: 5px white;
 }
+
+ul li:hover{
+color: rgb(177, 177, 177);
+  text-decoration: underline;
+  margin:2px;
+  transition: 3s;
+}
+

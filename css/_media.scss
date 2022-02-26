@@ -35,32 +35,18 @@
 	margin: 2vh 0px;
 	padding: 4vh 0px !important;
 }
-.projects {
-	margin-left: -15px;
-	/* align section w/ heading above */
-}
-
-.projects a {
-	/* 30px is the gutter size in magic grid */
-	width: calc(49% - 30px);
-	/* 49% avoids a weird single column on some wide screens */
+.projects{
 	display: flex;
-	text-decoration: none;
+	flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
 }
-
-.projects section {
-	width: 90%;
-    padding: 2.5vh 5%;
-    margin: 2vh 0px;
-    display: inline-block;
-    border-radius: 0px;
-    background-color: #262626;
-    color: var(--text-color);
-    border-left: 4px solid white;
-    -webkit-transition: 0.4s ease-in-out;
-    transition: 0.4s ease-in-out;
-    -webkit-transform: scale(1);
-    transform: scale(1);
+.section-box {
+	margin: 20px;
+	width: 350px;
+	border: 2px bold rgb(255, 255, 255);
+	padding: 20px;
 }
 @media (max-width: 800px) {
 	#profile {
@@ -93,18 +79,6 @@
 		margin: 0px;
 	}
 
-	.projects {
-		margin-left: 0;
-		/* remove neg margin to align w/ header */
-	}
-
-	.projects a {
-		width: 100%;
-	}
-
-	.projects section {
-		width: 88%;
-	}
 }
 
 @media (max-width: 800px) {
