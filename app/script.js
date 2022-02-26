@@ -30,6 +30,9 @@ $.getJSON("blog.json", function (blog) {
 }).fail(function () {
 	return (document.getElementById("blog_section").style.display = "none");
 });
+
+
+
 const magicProjectsGrid = new MagicGrid({
 	container: "#work_section",
 	animate: false,

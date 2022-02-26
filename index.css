@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 @import url("https://fonts.googleapis.com/css?family=Questrial");
 
+html{
+	scroll-behavior: smooth;
+}
 body {
 	margin: 0%;
 	padding: 0%;
@@ -12,6 +15,7 @@ body {
 	align-items: center;
 	font-family: "Poppins", sans-serif;
 }
+
 
 #loading {
 	width: 100vw;
@@ -512,6 +516,11 @@ a {
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: #fff;
+}
+
+.social-lk {
+  columns: 2;
+margin-right: 20px;
 }
 
 .projects section {
