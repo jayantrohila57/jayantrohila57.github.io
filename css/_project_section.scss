@@ -1,0 +1,96 @@
+#work {
+	margin: 2vh 0px;
+	padding: 4vh 0px !important;
+}
+
+.projects {
+	margin-left: -15px;
+	/* align section w/ heading above */
+}
+
+.projects a {
+	/* 30px is the gutter size in magic grid */
+	width: calc(49% - 30px);
+	/* 49% avoids a weird single column on some wide screens */
+	display: flex;
+	text-decoration: none;
+}
+
+.projects section {
+	width: 100%;
+	padding: 2.5vh 5%;
+	margin: 1vh 0px;
+	display: inline-block;
+	border-radius: 0px;
+	background-color: rgb(38, 38, 38);
+	color: var(--text-color);
+	border: 1px solid;
+	border-left: 1px solid white;
+	box-shadow: 0px 0px 0px;
+	transition: 0.4s ease-in-out;
+	transform: scale(1);
+}
+
+
+.section_title {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 1vh 0px;
+	padding: 0px 1px;
+}
+
+.about_section {
+	font-size: 18px;
+	font-family: "Questrial", sans-serif;
+	margin: 2vh 0px;
+	font-weight: bold;
+	word-wrap: break-word;
+}
+
+.bottom_section {
+	margin: 1vh 0px;
+	font-size: 14px;
+	word-wrap: break-word;
+}
+
+.bottom_section span {
+	margin-right: 20px;
+	font-weight: bold;
+}
+
+.bottom_section span i {
+	font-size: 15px;
+}
+
+.socials {
+	color: #fff;
+	text-decoration: none;
+	margin: 3vh 0px !important;
+}
+
+.socials span {
+	display: inline-block !important;
+	margin-right: 2vw !important;
+	font-weight: normal !important;
+}
+
+.socials span a {
+	font-weight: normal !important;
+}
+
+.go_back {
+	position: absolute;
+	color: var(--text-color);
+	font-size: 26px;
+	margin-left: 5vw;
+	margin-top: 4vh;
+}
+
+.social-lk {
+	columns: 2;
+	margin-right: 20px;
+}
+
+.projects section {
+	background-color: rgb(0, 0, 0);
+}

@@ -1,0 +1,47 @@
+#about-info-box {
+	background-color: gb(20, 20, 20);
+}
+#about-info-box li {
+	list-style-type: none;
+	text-decoration: none;
+}
+#userbio {
+	font-size: 20px;
+	font-family: "Questrial", sans-serif;
+	width: 100%;
+}
+
+#about {
+	font-size: 18px;
+	font-family: "Questrial", sans-serif;
+}
+
+#about a,
+#username a {
+	color: #fff !important;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#about a:hover,
+#username a:hover {
+	text-decoration: underline;
+}
+
+#about span {
+	margin: 1vh 0px;
+	display: block;
+}
+
+#about span i {
+	font-size: 16px;
+}
+
+#username {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#username span {
+	font-size: 24px;
+}

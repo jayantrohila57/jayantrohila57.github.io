@@ -1,0 +1,114 @@
+@media (max-width: 800px) {
+	#profile {
+		width: 90vw;
+		padding: 4vh 5vw;
+		height: 90vh;
+		text-align: center;
+		position: relative;
+	}
+
+	#display {
+		width: 90vw;
+		padding: 4vh 5vw;
+		height: auto;
+		display: inline-block;
+		padding-left: 5vw;
+	}
+
+	#profile_img {
+		width: 250px;
+		height: 250px;
+		min-width: 250px;
+		min-height: 250px;
+		max-width: 250px;
+		border-radius: 500px;
+		max-height: 250px;
+		margin: 0px auto !important;
+	}
+
+	#work {
+		margin: 0px;
+	}
+
+	.projects {
+		margin-left: 0;
+		/* remove neg margin to align w/ header */
+	}
+
+	.projects a {
+		width: 100%;
+	}
+
+	.projects section {
+		width: 88%;
+	}
+
+	#blogs {
+		columns: 1;
+	}
+
+	#blogs section {
+		width: 98%;
+	}
+
+	#blog_section {
+		margin: 0px;
+	}
+
+	#blog-display {
+		width: 90vw;
+		margin: 0px 5vw;
+		text-align: left;
+		margin-top: 0vh;
+		z-index: 1;
+	}
+
+	#blog_title {
+		font-size: 32px !important;
+	}
+
+	#blog_sub_title {
+		font-size: 24px;
+		margin-top: -1vh;
+	}
+
+	#profile_blog {
+		width: 90vw;
+		margin: 0px 5vw;
+		margin-top: 36vh;
+		text-align: left;
+		z-index: 1;
+	}
+
+	#profile_img_blog {
+		width: 65px;
+		height: 65px;
+	}
+
+	.go_back {
+		position: relative;
+		color: var(--text-color);
+		font-size: 26px;
+		margin-left: 5vw;
+		top: 5vh;
+	}
+
+	#blog img {
+		margin: 1vh 0px !important;
+	}
+
+	#blog p {
+		margin: 2vh 0px;
+	}
+}
+
+@media (max-width: 800px) {
+	:root {
+		--background-image: linear-gradient(
+				0deg,
+				rgba(10, 10, 10, 1),
+				rgba(10, 10, 10, 0)
+			),
+			url("https://telegra.ph/file/c09f9bf04410939bab7b9.jpg") !important;
+	}
+}

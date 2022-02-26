@@ -1,0 +1,28 @@
+#header {
+	width: 63vw;
+	text-align: right;
+	padding: 3vh 0px;
+	position: absolute;
+}
+
+#header a {
+	color: var(--text-color);
+	text-decoration: none;
+	margin-left: 4vw;
+	font-weight: bold;
+}
+
+
+
+#footer {
+	width: 100%;
+	padding: 8vh 0px;
+	text-align: center;
+}
+
+#footer a {
+	color: var(--text-color) !important;
+	text-decoration: none;
+	font-family: "Questrial", sans-serif;
+	font-weight: bold;
+}

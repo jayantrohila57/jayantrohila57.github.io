@@ -1,0 +1,27 @@
+
+html{
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0%;
+	padding: 0%;
+	width: 100vw;
+	background: var(--bg-color);
+	color: var(--text-color);
+	max-width: 100vw;
+	overflow-x: hidden;
+	align-items: center;
+	font-family: "Poppins", sans-serif;
+}
+
+
+#background {
+	width: 100vw;
+	height: 55vh;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	position: absolute;
+	z-index: -2;
+	top: 0;
+	left: 0;
+}
