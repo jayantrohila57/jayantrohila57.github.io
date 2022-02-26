@@ -1,8 +1,12 @@
-li {
-	list-style-type: none;
-}
-
 a {
 	color: white;
 	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+ul li:before {
+	content: "";
 }

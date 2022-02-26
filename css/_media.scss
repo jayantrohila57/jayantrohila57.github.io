@@ -1,3 +1,67 @@
+#profile {
+	width: 24vw;
+	padding: 4vh 3vw;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	background: var(--background-image) center center;
+	background-size: cover !important;
+	background-repeat: no-repeat;
+	position: fixed;
+	color: #fff !important;
+}
+#display {
+	width: 64vw;
+	padding: 4vh 3vw;
+	height: 92vh;
+	display: inline-block;
+	padding-left: 33vw;
+}
+#profile_img {
+	width: 250px;
+	height: 250px;
+	min-width: 250px;
+	min-height: 250px;
+	max-width: 250px;
+	max-height: 250px;
+	border-radius: 5px;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+}
+
+#work {
+	margin: 2vh 0px;
+	padding: 4vh 0px !important;
+}
+.projects {
+	margin-left: -15px;
+	/* align section w/ heading above */
+}
+
+.projects a {
+	/* 30px is the gutter size in magic grid */
+	width: calc(49% - 30px);
+	/* 49% avoids a weird single column on some wide screens */
+	display: flex;
+	text-decoration: none;
+}
+
+.projects section {
+	width: 90%;
+    padding: 2.5vh 5%;
+    margin: 2vh 0px;
+    display: inline-block;
+    border-radius: 0px;
+    background-color: #262626;
+    color: var(--text-color);
+    border-left: 4px solid white;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
 @media (max-width: 800px) {
 	#profile {
 		width: 90vw;
@@ -21,7 +85,6 @@
 		min-width: 250px;
 		min-height: 250px;
 		max-width: 250px;
-		border-radius: 500px;
 		max-height: 250px;
 		margin: 0px auto !important;
 	}
@@ -41,64 +104,6 @@
 
 	.projects section {
 		width: 88%;
-	}
-
-	#blogs {
-		columns: 1;
-	}
-
-	#blogs section {
-		width: 98%;
-	}
-
-	#blog_section {
-		margin: 0px;
-	}
-
-	#blog-display {
-		width: 90vw;
-		margin: 0px 5vw;
-		text-align: left;
-		margin-top: 0vh;
-		z-index: 1;
-	}
-
-	#blog_title {
-		font-size: 32px !important;
-	}
-
-	#blog_sub_title {
-		font-size: 24px;
-		margin-top: -1vh;
-	}
-
-	#profile_blog {
-		width: 90vw;
-		margin: 0px 5vw;
-		margin-top: 36vh;
-		text-align: left;
-		z-index: 1;
-	}
-
-	#profile_img_blog {
-		width: 65px;
-		height: 65px;
-	}
-
-	.go_back {
-		position: relative;
-		color: var(--text-color);
-		font-size: 26px;
-		margin-left: 5vw;
-		top: 5vh;
-	}
-
-	#blog img {
-		margin: 1vh 0px !important;
-	}
-
-	#blog p {
-		margin: 2vh 0px;
 	}
 }
 
