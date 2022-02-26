@@ -968,36 +968,12 @@ body {
   font-weight: normal !important;
 }
 
-.go_back {
-  position: absolute;
-  color: var(--text-color);
-  font-size: 26px;
-  margin-left: 5vw;
-  margin-top: 4vh;
-}
-
 .social-lk {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-columns: 1;
-          columns: 1;
-  font-size: 1.5em;
-  margin-right: 25px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-columns: 2;
+          columns: 2;
+  font-size: 1em;
+  margin: 20px;
+  padding: 5px;
 }
 
 .projects section {
@@ -1029,6 +1005,7 @@ body {
 
 :root {
   --bg-color: rgb(10, 10, 10);
+  --border-color: rgb(255, 255, 255);
   --text-color: #fff;
   --blog-gray-color: rgb(180, 180, 180);
   --background-image: linear-gradient(
@@ -1050,22 +1027,18 @@ a {
   color: white;
   text-decoration: none;
   margin: 2px;
-  -webkit-transition: 3s;
-  transition: 3s;
+  border-radius: 20px;
+  padding: 0px 5px 0px 5px;
+  margin: 5px 0px 5px 0px;
 }
 
 a:hover {
-  color: #b1b1b1;
-  text-decoration: underline;
-  margin: 2px;
-  -webkit-transition: 3s;
-  transition: 3s;
+  border-radius: 20px;
+  border: 2px solid var(--border-color);
 }
 
 ul {
-  list-style: none;
-  -webkit-transition: 3s;
-  transition: 3s;
+  list-style-type: style dot;
   margin-right: 5px;
   padding: 20px;
 }
@@ -1076,9 +1049,5 @@ ul li {
 
 ul li:hover {
   color: #b1b1b1;
-  text-decoration: underline;
-  margin: 2px;
-  -webkit-transition: 3s;
-  transition: 3s;
 }
 /*# sourceMappingURL=styles.css.map */

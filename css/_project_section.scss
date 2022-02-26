@@ -45,24 +45,12 @@
 	font-weight: normal !important;
 }
 
-.go_back {
-	position: absolute;
-	color: var(--text-color);
-	font-size: 26px;
-	margin-left: 5vw;
-	margin-top: 4vh;
-}
-
 .social-lk {
-	display: flex;
-	columns: 1;
-	font-size: 1.5em;
-	margin-right: 25px;
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: space-evenly;
-	align-items: center;
-	flex-direction: row;
+	columns: 2;
+	font-size: 1em;
+	margin: 20px;
+	padding: 5px;
+	
 }
 
 .projects section {

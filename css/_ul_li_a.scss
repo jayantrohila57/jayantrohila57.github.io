@@ -1,32 +1,27 @@
 a {
 	color: white;
 	text-decoration: none;
-	  margin:2px;
-  transition: 3s;
+	margin: 2px;
+	border-radius: 20px;
+	padding: 0px 5px 0px 5px;
+	margin: 5px 0px 5px 0px;
 }
 
-a:hover{
-	color: rgb(177, 177, 177);
-  text-decoration: underline;
-    margin:2px;
-  transition: 3s;
+a:hover {
+	border-radius: 20px;
+	border: 2px solid var(--border-color);
 }
 
 ul {
-	list-style: none;
-	  transition: 3s;
-	  margin-right: 5px;
-	  padding: 20px;
+	list-style-type: style dot;;
+	margin-right: 5px;
+	padding: 20px;
 }
 
-ul li{
+ul li {
 	border: 5px white;
 }
 
-ul li:hover{
-color: rgb(177, 177, 177);
-  text-decoration: underline;
-  margin:2px;
-  transition: 3s;
+ul li:hover {
+	color: rgb(177, 177, 177);
 }
-
