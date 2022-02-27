@@ -5,16 +5,6 @@ setTimeout(function () {
 		document.getElementById("loading").classList.remove("animated");
 		document.getElementById("loading").classList.remove("fadeOut");
 		document.getElementById("loading").style.display = "none";
-	}, 800);
-}, 1500);
+	}, 400);
+}, 400);
 
-
- $(function () {
-		$(".scroll-down").click(function () {
-			$("html, body").animate(
-				{ scrollTop: $("section.ok").offset().top },
-				"slow"
-			);
-			return false;
-		});
- });

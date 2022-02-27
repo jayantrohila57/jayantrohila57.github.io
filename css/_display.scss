@@ -17,7 +17,7 @@ text-transform: uppercase;
 transition: 8s;
 }
 #title-name {
-	height: 100vh;
+	height: 80vh;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -166,8 +166,7 @@ transition: 8s;
 
 @media (max-width: 600px) {
 #title-name {
-	height: 60vh;
-
+	height: 55vh;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;

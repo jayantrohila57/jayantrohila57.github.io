@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 @import url("https://fonts.googleapis.com/css?family=Questrial");
 #about-info-box {
+  margin-top: 100px;
   background-color: gb(20, 20, 20);
 }
 
@@ -104,7 +105,7 @@ body {
 }
 
 #title-name {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,7 +399,7 @@ body {
 
 @media (max-width: 600px) {
   #title-name {
-    height: 60vh;
+    height: 55vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -673,56 +674,37 @@ body {
   }
 }
 
-table, figure {
-  page-break-inside: avoid;
-}
-
 h1, h2, h3, h4, h5 {
-  page-break-after: avoid;
+  page-break-after: always;
 }
 
 @page {
-  size: A4;
+  size: A4 landscape;
+}
+
+@page :first {}@page :blank {
+  @top-center {
+    content: "This page is intentionally left blank.";
+  }
 }
 
 @page :left {
   @bottom-left {
     content: "Page " counter(page) " of " counter(pages);
   }
-}
-
-@page :right {
-  @bottom-right {
+  @bottom-left {
     content: counter(page);
-  }
-}
-
-@page :first {}@page :left {
-  margin-left: 3cm;
-}
-
-@page :right {
-  margin-left: 4cm;
-}
-
-@page :blank {
-  @top-center {
-    content: "This page is intentionally left blank.";
   }
 }
 
 @page :right {
   @bottom-left {
-    margin: 10pt 0 30pt 0;
     border-top: .25pt solid #666;
     content: "My book";
     font-size: 9pt;
     color: #333;
   }
-}
-
-@page :left {
-  @bottom-left {
+  @bottom-right {
     content: counter(page);
   }
 }
@@ -743,8 +725,26 @@ h1, h2, h3, h4, h5 {
 
 #footer {
   width: 100%;
+  height: 80vh;
   padding: 8vh 0px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #footer a {
@@ -752,6 +752,28 @@ h1, h2, h3, h4, h5 {
   text-decoration: none;
   font-family: "Questrial", sans-serif;
   font-weight: bold;
+}
+
+.links-back {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .Scroll {
@@ -924,6 +946,7 @@ h1, h2, h3, h4, h5 {
 }
 
 #work {
+  margin-top: 100px;
   margin: 2vh 0px;
   padding: 4vh 0px !important;
 }
@@ -1076,7 +1099,8 @@ h1, h2, h3, h4, h5 {
 .socials {
   color: #fff;
   text-decoration: none;
-  margin: 4vh 0px !important;
+  margin: 4vh 0px;
+  margin-top: 100px;
 }
 
 .socials span {
@@ -1093,12 +1117,57 @@ h1, h2, h3, h4, h5 {
   -webkit-columns: 2;
           columns: 2;
   font-size: 1em;
-  margin: 20px;
-  padding: 5px;
+  margin: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
 }
 
 .projects section {
   background-color: black;
+}
+
+#skill {
+  width: 100%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px;
 }
 
 ::-moz-selection {
