@@ -50,6 +50,10 @@
   font-size: 24px;
 }
 
+@page {
+  size: A4;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -671,6 +675,64 @@ body {
       width: 200px;
       border-radius: 200px;
     }
+  }
+}
+
+h1 {
+  page-break-before: always;
+}
+
+table, figure {
+  page-break-inside: avoid;
+}
+
+body {
+  counter-reset: none;
+}
+
+@page {
+  size: A4;
+}
+
+@page :left {
+  @bottom-left {
+    content: "Page " counter(page) " of " counter(pages);
+  }
+}
+
+@page :right {
+  @bottom-right {
+    content: counter(page);
+  }
+}
+
+@page :first {}@page :left {
+  margin-left: 3cm;
+}
+
+@page :right {
+  margin-left: 4cm;
+}
+
+@page :blank {
+  @top-center {
+    content: "This page is intentionally left blank.";
+  }
+}
+
+@page :right {
+  @bottom-left {
+    margin: 10pt 0 30pt 0;
+    border-top: .25pt solid #666;
+    content: "My book";
+    font-size: 9pt;
+    color: #333;
+  }
+}
+
+@page :left {
+  @bottom-left {
+    content: counter(page);
   }
 }
 
