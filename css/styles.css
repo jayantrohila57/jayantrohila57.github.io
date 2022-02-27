@@ -50,10 +50,6 @@
   font-size: 24px;
 }
 
-@page {
-  size: A4;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -403,7 +399,6 @@ body {
 @media (max-width: 600px) {
   #title-name {
     height: 60vh;
-    width: 350px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -678,16 +673,12 @@ body {
   }
 }
 
-h1 {
-  page-break-before: always;
-}
-
 table, figure {
   page-break-inside: avoid;
 }
 
-body {
-  counter-reset: none;
+h1, h2, h3, h4, h5 {
+  page-break-after: avoid;
 }
 
 @page {
@@ -761,6 +752,100 @@ body {
   text-decoration: none;
   font-family: "Questrial", sans-serif;
   font-weight: bold;
+}
+
+.Scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  height: 80px;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+  width: 30px;
+  height: 40px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 6px);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid white;
+  border-width: 0px 0 2px 2px;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
 }
 
 /*Loading */
@@ -886,10 +971,10 @@ body {
 }
 
 .section-box {
-  margin: 20px;
-  width: 350px;
+  margin: 0px;
+  width: 300px;
   border: 2px bold white;
-  padding: 20px;
+  padding: 10px;
 }
 
 @media (max-width: 800px) {
