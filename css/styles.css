@@ -1015,8 +1015,9 @@ h1, h2, h3, h4, h5 {
 }
 
 #profile_img {
-  -webkit-animation: stretch 4s infinite;
-          animation: stretch 4s infinite;
+  background-image: url(/img/JayantRohila.jpg);
+  -webkit-animation: stretch 9s infinite;
+          animation: stretch 9s infinite;
 }
 
 @-webkit-keyframes stretch {
@@ -1168,6 +1169,10 @@ h1, h2, h3, h4, h5 {
       -ms-flex-align: center;
           align-items: center;
   margin: 50px;
+}
+
+.skl img {
+  margin: 8px;
 }
 
 ::-moz-selection {

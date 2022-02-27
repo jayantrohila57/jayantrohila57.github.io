@@ -1,6 +1,7 @@
 
 #profile_img{
-	 animation: stretch 4s infinite;
+  background-image: url(/img/JayantRohila.jpg);
+	 animation: stretch 9s infinite;
   }
 @keyframes stretch {
   0% {
@@ -22,7 +23,6 @@ border-radius: 180px 180px 220px 150px;
 border-radius:  200px 150px 100px 180px;
   }
 }
-
 
 #profile div {
 	font-weight: bold;
