@@ -2,7 +2,6 @@
     --bg-color: rgb(10, 10, 10);
     --border-color: rgb(255, 255, 255);
     --text-color: #fff;
-    --blog-gray-color: rgb(180, 180, 180);
     --background-image: url("https://telegra.ph/file/c09f9bf04410939bab7b9.jpg") center center fixed;
     --background-background: url("https://telegra.ph/file/c09f9bf04410939bab7b9.jpg") center center fixed;
 }
@@ -17,7 +16,7 @@ body {
     padding: 0%;
     background: var(--bg-color);
     color: var(--text-color);
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
