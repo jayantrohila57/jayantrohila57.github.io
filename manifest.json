@@ -1,5 +1,5 @@
 {
-    "name": "Jayant Rohila &amp; About-Info | Portfolio",
+    "name": "Jayant Rohila About-Info | Portfolio",
     "short_name": "Jayant Rohila",
     "description": "This is The Portfolio of Jayant Rohila. A Web Developer Loves to make responsive designs and animation on the web apps and sites.",
     "icons": [{
@@ -27,7 +27,7 @@
             "purpose": "maskable"
         }
     ],
-    "start_url": "/?index.html",
+    "start_url": "/index.html",
     "display_override": ["window-control-overlay", "minimal-ui"],
     "display": "fullscreen",
     "scope": "/",
