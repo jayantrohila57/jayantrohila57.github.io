@@ -1,27 +1,27 @@
 {
-    "name": "Jayant Rohila About-Info | Portfolio",
+    "name": "Jayant Rohila",
     "short_name": "Jayant Rohila",
     "description": "This is The Portfolio of Jayant Rohila. A Web Developer Loves to make responsive designs and animation on the web apps and sites.",
     "icons": [{
-            "src": "icons/manifest-icon-192.maskable.png",
+            "src": "dist/icons/icon-192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "icons/manifest-icon-192.maskable.png",
+            "src": "dist/icons/icon-192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "icons/manifest-icon-512.maskable.png",
+            "src": "dist/icons/icon-512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "icons/manifest-icon-512.maskable.png",
+            "src": "dist/icons/icon-512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
