@@ -28,6 +28,79 @@
             "purpose": "maskable"
         }
     ],
+    "shortcuts": [{
+            "name": "Portfolio",
+            "url": "/index.html/#portfolio",
+            "icons": [{
+                "src": "dist/icons/icon-192.png",
+                "type": "image/png",
+                "sizes": "192x192"
+            }]
+        },
+        {
+            "name": "Profile",
+            "url": "/index.html/#profile",
+            "icons": [{
+                "src": "dist/icons/icon-192.png",
+                "type": "image/png",
+                "sizes": "192x192"
+            }]
+        },
+        {
+            "name": "About",
+            "url": "/index.html/#about",
+            "icons": [{
+                "src": "dist/icons/icon-192.png",
+                "type": "image/png",
+                "sizes": "192x192"
+            }]
+        },
+        {
+            "name": "Project",
+            "url": "/index.html/#project",
+            "icons": [{
+                "src": "dist/icons/icon-192.png",
+                "type": "image/png",
+                "sizes": "192x192"
+            }]
+        },
+        {
+            "name": "Experience",
+            "url": "/index.html/#Experience",
+            "icons": [{
+                "src": "dist/icons/icon-192.png",
+                "type": "image/png",
+                "sizes": "192x192"
+            }]
+        },
+        {
+            "name": "Skill",
+            "url": "/index.html/#skill",
+            "icons": [{
+                "src": "dist/icons/icon-192.png",
+                "type": "image/png",
+                "sizes": "192x192"
+            }]
+        },
+        {
+            "name": "Socials",
+            "url": "/index.html/#socials",
+            "icons": [{
+                "src": "dist/icons/icon-192.png",
+                "type": "image/png",
+                "sizes": "192x192"
+            }]
+        },
+        {
+            "name": "Site Info",
+            "url": "/index.html/#footer",
+            "icons": [{
+                "src": "dist/icons/icon-192.png",
+                "type": "image/png",
+                "sizes": "192x192"
+            }]
+        }
+    ],
     "screenshots": [{
             "src": "/dist/icons/screenshot-1-591x1280.png",
             "sizes": "591x1280",
