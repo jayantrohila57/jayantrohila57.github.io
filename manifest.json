@@ -30,7 +30,7 @@
     ],
     "shortcuts": [{
             "name": "Portfolio",
-            "url": "/index.html/#portfolio",
+            "url": "https://jayant-rohila.site/#portfolio",
             "icons": [{
                 "src": "dist/icons/icon-192.png",
                 "type": "image/png",
@@ -39,43 +39,7 @@
         },
         {
             "name": "Profile",
-            "url": "/index.html/#profile",
-            "icons": [{
-                "src": "dist/icons/icon-192.png",
-                "type": "image/png",
-                "sizes": "192x192"
-            }]
-        },
-        {
-            "name": "About",
-            "url": "/index.html/#about",
-            "icons": [{
-                "src": "dist/icons/icon-192.png",
-                "type": "image/png",
-                "sizes": "192x192"
-            }]
-        },
-        {
-            "name": "Project",
-            "url": "/index.html/#project",
-            "icons": [{
-                "src": "dist/icons/icon-192.png",
-                "type": "image/png",
-                "sizes": "192x192"
-            }]
-        },
-        {
-            "name": "Experience",
-            "url": "/index.html/#Experience",
-            "icons": [{
-                "src": "dist/icons/icon-192.png",
-                "type": "image/png",
-                "sizes": "192x192"
-            }]
-        },
-        {
-            "name": "Skill",
-            "url": "/index.html/#skill",
+            "url": "https://jayant-rohila.site/#profile",
             "icons": [{
                 "src": "dist/icons/icon-192.png",
                 "type": "image/png",
@@ -84,16 +48,7 @@
         },
         {
             "name": "Socials",
-            "url": "/index.html/#socials",
-            "icons": [{
-                "src": "dist/icons/icon-192.png",
-                "type": "image/png",
-                "sizes": "192x192"
-            }]
-        },
-        {
-            "name": "Site Info",
-            "url": "/index.html/#footer",
+            "url": "https://jayant-rohila.site/#socials",
             "icons": [{
                 "src": "dist/icons/icon-192.png",
                 "type": "image/png",
