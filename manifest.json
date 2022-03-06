@@ -30,7 +30,7 @@
     ],
     "shortcuts": [{
             "name": "Portfolio",
-            "url": "https://jayant-rohila.site/#portfolio",
+            "url": "index.html/#portfolio",
             "icons": [{
                 "src": "dist/icons/icon-192.png",
                 "type": "image/png",
@@ -39,7 +39,7 @@
         },
         {
             "name": "Profile",
-            "url": "https://jayant-rohila.site/#profile",
+            "url": "/#profile",
             "icons": [{
                 "src": "dist/icons/icon-192.png",
                 "type": "image/png",
@@ -48,7 +48,7 @@
         },
         {
             "name": "Socials",
-            "url": "https://jayant-rohila.site/#socials",
+            "url": "https://jayant-rohila.site/",
             "icons": [{
                 "src": "dist/icons/icon-192.png",
                 "type": "image/png",
