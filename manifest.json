@@ -30,7 +30,7 @@
     ],
     "shortcuts": [{
             "name": "Portfolio",
-            "url": "index.html/#portfolio",
+            "url": "/#portfolio",
             "icons": [{
                 "src": "dist/icons/icon-192.png",
                 "type": "image/png",
@@ -48,7 +48,7 @@
         },
         {
             "name": "Socials",
-            "url": "https://jayant-rohila.site/",
+            "url": "/#social",
             "icons": [{
                 "src": "dist/icons/icon-192.png",
                 "type": "image/png",
