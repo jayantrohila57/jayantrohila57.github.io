@@ -1,0 +1,24 @@
+{
+    "name": "jayantrohila57.github.io",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jayantrohila57/jayantrohila57.github.io.git"
+    },
+    "keywords": [],
+    "author": "Jayant Rohila",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jayantrohila57/jayantrohila57.github.io/issues"
+    },
+    "homepage": "https://github.com/jayantrohila57/jayantrohila57.github.io#readme",
+    "dependencies": {
+        "aos": "^3.0.0-beta.6",
+        "bootstrap": "^5.1.3"
+    }
+}
