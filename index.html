@@ -1,0 +1,1041 @@
+<html>
+	<head>
+		<!-- Primary Meta Tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Language" content="EN" />
+
+		<!-- INFO Meta Tags -->
+		<title>Jayant Rohila &amp; About-Info | Portfolio</title>
+		<meta name="title" content="Jayant Rohila &amp; About-Info | Portfolio" />
+		<meta name="date" content="2022-07-23" />
+		<meta name="sitecode" content="in" />
+		<meta name="theme-color" content="#0c4da2" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="apple-mobile-web-app-title" content="Portfolio" />
+		<meta name="msapplication-TileImage" content="./img/JayantRohila.jpg" />
+		<meta name="msapplication-TileColor" content="#000000" />
+		<meta
+			name="description"
+			content="I like to build &amp; Design websites for people like You. Currently learning &amp; making improvement in coding."
+		/>
+
+		<style>
+			.page-loading {
+				position: fixed;
+				z-index: 9999;
+				left: 0;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+				-webkit-transform: translateX(-160%) skewX(20deg);
+				-moz-transform: translateX(-160%) skewX(20deg);
+				-o-transform: translateX(-160%) skewX(20deg);
+				-ms-transform: translateX(-160%) skewX(20deg);
+				transform: translateX(-160%) skewX(20deg);
+				-webkit-transition: all 2.4s;
+				-moz-transition: all 2.4s;
+				transition: all 2.4s;
+			}
+			.page-loading.lm.visible,
+			.page-loading.lmm.mask2-show {
+				-webkit-transform: translateX(0) skewX(0);
+				-moz-transform: translateX(0) skewX(0);
+				-o-transform: translateX(0) skewX(0);
+				-ms-transform: translateX(0) skewX(0);
+				transform: translateX(0) skewX(0);
+			}
+			.page-loading.visible {
+				-webkit-transition: all 2.4s;
+				-moz-transition: all 2.4s;
+				-o-transition: all 2.4s;
+				transition: all 2.4s;
+			}
+			.page-loading.lmm {
+				-webkit-transform: translateX(0) skewX(0);
+				-moz-transform: translateX(0) skewX(0);
+				-ms-transform: translateX(0) skewX(0);
+				-o-transform: translateX(0) skewX(0);
+				transform: translateX(0) skewX(0);
+			}
+			.page-loading.lmm {
+				-webkit-transform: translateX(160%) skewX(-20deg);
+				-moz-transform: translateX(160%) skewX(-20deg);
+				-ms-transform: translateX(160%) skewX(-20deg);
+				-o-transform: translateX(160%) skewX(-20deg);
+				transform: translateX(160%) skewX(-20deg);
+			}
+			.page-loading-inn {
+				position: relative;
+				width: 100%;
+				height: 100%;
+			}
+			.page-loading-transform,
+			.ux-loading-transform {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				line-height: 36px;
+				text-align: center;
+				-webkit-transform: translate(-50%, -50%);
+				-moz-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				-o-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
+			.page-loading ~ #wrap-outer #wrap,
+			.page-loading ~ #wrap-outer .cover-wrap:not(.topslider-revolu),
+			.page-loading ~ #wrap-outer .second-fullscreen {
+				opacity: 1;
+				-webkit-transform: translateX(0);
+				-moz-transform: translateX(0);
+				-ms-transform: translateX(0);
+				-o-transform: translateX(0);
+				transform: translateX(0);
+				-webkit-transition: all 1.5s;
+				-moz-transition: all 1.5s;
+				-o-transition: all 1.5s;
+				transition: all 1.5s;
+			}
+			.page-loading.visible ~ #wrap-outer #wrap,
+			.page-loading.visible ~ #wrap-outer .cover-wrap:not(.topslider-revolu),
+			.page-loading.visible ~ #wrap-outer .second-fullscreen {
+				opacity: 0;
+				-webkit-transform: translateX(120px);
+				-moz-transform: translateX(120px);
+				-ms-transform: translateX(120px);
+				-o-transform: translateX(120px);
+				transform: translateX(120px);
+				-webkit-transition: all 1.5s;
+				-moz-transition: all 1.5s;
+				transition: all 1.5s;
+			}
+			.mask2-show ~ #wrap-outer #wrap,
+			.mask2-show ~ #wrap-outer .cover-wrap,
+			.mask2-show ~ #wrap-outer .second-fullscreen {
+				opacity: 0;
+				-webkit-transform: translateX(-120px);
+				-moz-transform: translateX(-120px);
+				-ms-transform: translateX(-120px);
+				-o-transform: translateX(-120px);
+				transform: translateX(-120px);
+				-webkit-transition: all 11.5s 0.5s;
+				-moz-transition: all 11.5s 0.5s;
+				-o-transition: all 11.5s 0.5s;
+				transition: all 11.5s 0.5s;
+			}
+			.page-loading .loading-transform {
+				margin-top: 0;
+			}
+			.page-loading .site-loading-logo img {
+				max-height: 120px;
+				max-width: 200px;
+				width: 120px;
+				height: 120px;
+			}
+			.site-loading-logo .logo-h1 {
+				font-size: 24px;
+			}
+			.search-loading {
+				position: relative;
+			}
+			.search-loading:after,
+			.search-loading:before {
+				content: ".";
+				position: absolute;
+				left: -5px;
+				-webkit-animation: SearchLoadingBrething 1s infinite ease-in-out;
+				-moz-animation: SearchLoadingBrething 1s infinite ease-in-out;
+				animation: SearchLoadingBrething 1s infinite ease-in-out;
+			}
+			.search-loading:before {
+				left: 5px;
+				animation-delay: 0.2s;
+			}
+			@-webkit-keyframes SearchLoadingBrething {
+				0% {
+					opacity: 0.1;
+				}
+				50% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0.2;
+				}
+			}
+			@-moz-keyframes SearchLoadingBrething {
+				0% {
+					opacity: 0.1;
+				}
+				50% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0.2;
+				}
+			}
+			@keyframes SearchLoadingBrething {
+				0% {
+					opacity: 0.1;
+				}
+				50% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0.2;
+				}
+			}
+			.site-loading-logo .logo-h1 {
+				font-size: 24px;
+			}
+			.page-loading {
+				background-color: #172439;
+			}
+			.site-loading-logo h1 {
+				color: #fff;
+				letter-spacing: 5px;
+				font-family: "roboto";
+			}
+		</style>
+		<!--Basic Info -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="language" content="English" />
+		<meta name="revisit-after" content="1 days" />
+		<meta name="target" content="all" />
+		<meta name="og:phone_number" content="+917500310305" />
+		<meta name="subtitle" content="Jayant Rohila| Portfolio" />
+		<meta name="url" content="https://jayantrohila.dev" />
+		<meta name="subject" content="Portfolio" />
+		<meta name="reply-to" content="jrohila55@gmail.com" />
+		<meta name="author" content="Jayant Rohila" />
+		<meta name="Author" content="Jayant Rohila" />
+		<meta name="Reply-To" content="jrohila55@gmail.com" />
+		<meta name="Copyright" content="@JayantRohila" />
+		<meta name="Distribution" content="Global" />
+		<meta name="Revisit-After" content="1 Day" />
+		<meta name="Rating" content="General" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta
+			name="theme-color"
+			media="(prefers-color-scheme: light)"
+			content="white"
+		/>
+		<meta
+			name="theme-color"
+			media="(prefers-color-scheme: dark)"
+			content="black"
+		/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=yes" />
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@jayant_rohila" />
+		<meta name="twitter:creator" content="@jayant_rohila" />
+		<meta name="twitter:url" content="https://jayantrohila.dev" />
+		<meta
+			name="twitter:title"
+			content="Jayant Rohila &amp; About-Info |
+            Portfolio"
+		/>
+		<meta
+			name="twitter:description"
+			content="I like to build &amp; Design websites for people like You. Currently learning &amp; making improvement in coding."
+		/>
+		<meta
+			name="twitter:image"
+			content="./jayantRohila.logo-square-letter.png"
+		/>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Jayant-Rohila | Portfolio" />
+		<meta property="og:locale" content="en-IN" />
+		<meta property="og:url" content="https://jayantrohila.dev" />
+		<meta property="og:image" content="./img/JayantRohila.jpg" />
+		<meta
+			property="og:title"
+			content="Jayant Rohila &amp; About-Info |
+            Portfolio"
+		/>
+		<meta
+			property="og:description"
+			content="I like to build &amp; Design websites for people like You. Currently learning &amp; making improvement in coding."
+		/>
+		<meta property="og:country-name" content="in" />
+		<meta property="name" content="Jayant Rohila" />
+		<meta property="image" content="./img/JayantRohila.jpg" />
+		<meta property="url" content="https://jayantrohila.dev" />
+		<meta
+			property="description"
+			content="I like to build &amp; Design websites for people like You. Currently learning &amp; making improvement in coding."
+		/>
+		<!-- TODO fix keyword -->
+		<meta
+			property="keywords"
+			content="Jayant Rohila
+            ,jr57,jayantrohila57,jayant-rohila,site,jayant,j,r,JAYANT,jayant-rohila,jayant,Jayant,Jayant57,@jayantrohila57,@jayant,@jayantrohila,#jayant,#jayantrohila,@jayant-rohila,Jayant,Jayant-rohila,jayant.rohila,jayantRohila,Rohila,Rohila,Jayant
+            Rohila,jrohila,Jrohila55,jrohila57,coolboyjayant57,jayantRohila57.animation,animelist,application,applications,apps,author,available,backend,beautiful,browser,buy,coffee,check,click,collaborate,color,connections,countdown,counter,created,currently,designs,developer,development,extensions,facebook,fact,fashion,features,files,flipper,follow,form,frontend,happily,help,hire,info,instagram,javascript,jayant,just,landing,language,layout,learn,learning,link,links,linktree,looking,loves,mail,make,making,null,number,page,paypal,PhotoShop,pinterest,portfolio,profile,pronouns,query,reach
+            ,react,reddit,reply,responsive,review,rohila,scroll,send,site,sites,skill,skype,snapchat,social,soon,spaces,spotify,stack,sure,survey,tabs,telegram,themes,timer,tribute,twitch,twitter,upload,used,website,websites,whatsapp,work,working,youtube"
+		/>
+		<!-- Verification -->
+		<meta name="robots" content="index, follow" />
+		<meta
+			name="google-site-verification"
+			content="NmMRb5AlgIQQG-ig7XzSBXSykb1CPCViSnnWazFoYKY"
+		/>
+
+		<!--LINKS & Scripts -->
+		<link rel="apple-touch-icon" href="dist/icons/apple-180.png" />
+		<link rel="manifest" href="/manifest.json" />
+		<link rel="xml" href="sitemap.xml" />
+		<link rel="config" href="config.json" />
+		<link rel="robots" href="robots.txt" />
+		<link rel="script" href="/service-worker.js" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<link
+			href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+		<!--Scripts -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	</head>
+	<body
+		onload="LoadingAnimation()"
+		class="bg-gray-900 dark:bg-gray-900 dark"
+		data-new-gr-c-s-check-loaded="14.1068.0"
+		data-gr-ext-installed=""
+	>
+		<!-- Loading Animation  -->
+		<div class="page-loading lm visible">
+			<div class="page-loading-inn">
+				<div class="page-loading-transform">
+					<div class="site-loading-logo">
+						<div
+							class="text-gray-800 dark:text-gray-100 from-blue-500 to-teal-400 text-3xl sm:text-5xl"
+							style="-webkit-text-fill-color: transparent"
+						>
+							<h1
+								class="text-start font-black mb-4 pb-1 bg-clip-text bg-gradient-to-r text-gray-800 dark:text-gray-100"
+								style="line-height: 1.1"
+							>
+								Welcome
+							</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-loading lmm">
+			<div class="page-loading-inn">
+				<div class="page-loading-transform">
+					<div class="site-loading-logo">
+						<h1>Jayant Rohila</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Loading Animation  -->
+		<div id="home" class="bg-gray-900 dark:bg-gray-900 dark">
+			<div
+				class="flex flex-col h-screen justify-between font-content antialiased"
+			>
+				<main class="mb-auto">
+					<div>
+						<div>
+							<!-- Padding -->
+							<section
+								class="bg-gray-900 dark:bg-gray-900 dark overflow-hidden"
+							>
+								<div class="mt-11 h-24"></div>
+							</section>
+							<!-- hero section -->
+							<section
+								class="bg-gray-900 dark:bg-gray-900 dark overflow-hidden"
+							>
+								<div
+									class="mx-auto px-5 sm:w-11/12 xl:w-3/4 2xl:w-2/3 py-12 xl:py-20"
+								>
+									<div class="max-w-xl mx-auto px-5">
+										<div class="mb-4">
+											<div
+												data-aos="fade-up"
+												data-aos-duration="2500"
+												index="0"
+												class="flex justify-start items-start"
+											>
+												<span
+													class="text-sm font-black uppercase text-start text-blue-400 dark:text-blue-300"
+													style="letter-spacing: 0.35em"
+													>Hi👋🏼 Myself
+												</span>
+											</div>
+										</div>
+										<div
+											class="text-gray-800 dark:text-gray-100 from-blue-500 to-teal-400 text-3xl sm:text-5xl"
+											style="-webkit-text-fill-color: transparent"
+										>
+											<h1
+												data-aos="fade-up"
+												data-aos-duration="2900"
+												class="text-start font-black mb-4 pb-1 bg-clip-text bg-gradient-to-r text-gray-800 dark:text-gray-100"
+												style="line-height: 1.1"
+											>
+												Jayant Rohila,
+											</h1>
+											<h1
+												data-aos="fade-up"
+												data-aos-duration="3000"
+												class="text-start font-black mb-4 pb-1 bg-clip-text bg-gradient-to-r text-gray-800 dark:text-gray-100"
+												style="line-height: 1.1"
+											>
+												I'm Web Developer
+											</h1>
+										</div>
+										<p
+											data-aos="fade-up"
+											data-aos-duration="2800"
+											class="text-lg sm:text-2xl text-start leading-7 sm:leading-8 text-gray-700 dark:text-gray-300"
+										>
+											I like to build &amp; Design websites for people like You.
+										</p>
+										<p
+											data-aos="fade-up"
+											data-aos-duration="3000"
+											class="text-lg sm:text-2xl text-start leading-7 sm:leading-8 text-gray-700 dark:text-gray-300"
+										>
+											Currently learning &amp; making improvement in coding.
+										</p>
+									</div>
+								</div>
+							</section>
+							<!-- Padding -->
+							<section
+								class="bg-gray-900 dark:bg-gray-900 dark overflow-hidden"
+							>
+								<div class="mt-11 h-24"></div>
+							</section>
+							<!-- About Section -->
+							<section
+								class="bg-gray-900 dark:bg-gray-900 dark overflow-hidden"
+							>
+								<div
+									class="mx-auto px-5 sm:w-11/12 xl:w-3/4 2xl:w-2/3 py-12 lg:py-20 flex flex-no-wrap md:items-start md:space-x-8 items-start flex-col-reverse md:flex-row-reverse md:space-x-reverse"
+								>
+									<div class="w-full md:flex-1 flex flex-col md:pl-1/10">
+										<div
+											data-aos="fade-up"
+											data-aos-duration="1300"
+											class="mb-4 flex"
+										>
+											<div index="0" class="flex justify-center items-center">
+												<span
+													class="text-sm font-black uppercase text-center text-gray-500 dark:text-gray-400"
+													style="letter-spacing: 0.35em"
+													>About me</span
+												>
+											</div>
+										</div>
+										<h2
+											data-aos="fade-up"
+											data-aos-duration="1400"
+											class="mt-0 mb-4 text-gray-900 dark:text-gray-100 text-2xl sm:text-3xl font-extrabold"
+											style="line-height: 1.125"
+										>
+											I'm Jayant Rohila
+										</h2>
+										<p
+											data-aos="fade-up"
+											data-aos-duration="1500"
+											class="text-lg sm:text-xl mb-3 text-gray-700 dark:text-gray-300"
+											style="line-height: 1.6"
+										>
+											I've been coding for about a year. I'm a College Student
+											who loves building full-stack applications &amp; Learning
+											new technologies. I've also wroked for many people with
+											their work.
+										</p>
+										<p
+											data-aos="fade-up"
+											data-aos-duration="1500"
+											class="text-lg sm:text-xl mb-3 text-gray-700 dark:text-gray-300"
+											style="line-height: 1.6"
+										>
+											When I'm not coding, I'm a photographer guy who also love
+											to listen songs.<a
+												href="https://dashboard.reactbricks.com"
+												class="text-lg"
+												element="[object Object]"
+											></a>
+										</p>
+										<div class="flex items-center flex-col sm:flex-row mt-4">
+											<a
+												data-aos="fade-in"
+												data-aos-duration="1500"
+												href="https://github.com/jayantrohila57"
+												target="_blank"
+												class="py-3 mx-2 my-2 rounded-full font-bold leading-none translate-hover-2 hover:shadow-lg transition-all ease-in-out duration-150 px-5 border border-sky-600 text-sky-600 hover:text-sky-600 dark:border-sky-500 dark:text-sky-500"
+												rel="noopener noreferrer"
+												index="0"
+												>Github Profile</a
+											>
+										</div>
+									</div>
+									<div
+										data-aos="zoom-in"
+										data-aos-duration="1500"
+										class="w-full mt-0 mb-10 md:w-2/5 md:mt-0 md:mb-0"
+									>
+										<div>
+											<img
+												src="https://images.reactbricks.com/original/db64e5e0-73db-4475-b29e-c0d4b9146425/JayantRohila.jpg"
+												alt="Jayant Rohila"
+												class="rounded-lg shadow-2xl"
+											/>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- skill -->
+							<section
+								class="bg-gray-900 dark:bg-gray-900 dark overflow-hidden"
+							>
+								<div
+									class="mx-auto px-5 sm:w-11/12 xl:w-3/4 2xl:w-2/3 py-12 lg:py-20 flex flex-no-wrap md:items-start md:space-x-8 items-center flex-col md:flex-row"
+								>
+									<div class="w-full md:flex-1 flex flex-col md:pr-1/10">
+										<div
+											data-aos="fade-up"
+											data-aos-duration="1500"
+											class="mb-4 flex justify-center md:justify-start"
+										>
+											<div index="0" class="flex justify-center items-center">
+												<span
+													class="text-sm font-black uppercase text-center text-gray-500 dark:text-gray-400"
+													style="letter-spacing: 0.35em"
+													>skills</span
+												>
+											</div>
+										</div>
+										<h2
+											data-aos="fade-up"
+											data-aos-duration="1500"
+											class="mt-0 mb-4 text-gray-900 dark:text-gray-100 text-center md:text-left text-2xl sm:text-3xl font-extrabold"
+											style="line-height: 1.125"
+										>
+											Some of My Skills
+										</h2>
+										<p
+											data-aos="fade-up"
+											data-aos-duration="1600"
+											class="text-lg sm:text-xl mb-3 text-gray-700 dark:text-gray-300 text-center md:text-left"
+											style="line-height: 1.6"
+										>
+											What Library &amp; Framework I mostly use while coding.
+										</p>
+										<div
+											class="mt-4 w-full flex flex-col lg:flex-row lg:flex-wrap lg:justify-between"
+										>
+											<div
+												data-aos="fade-up"
+												data-aos-duration="1500"
+												class="flex justify-start items-center py-2 leading-tight lg:w-2/5 text-lg"
+												index="0"
+											>
+												<div
+													class="flex justify-center items-center w-5 h-5 rounded-full mr-4 text-sm bg-sky-500 text-white"
+													style="min-width: 1.25rem"
+												>
+													<svg
+														stroke="currentColor"
+														fill="none"
+														stroke-width="2"
+														viewBox="0 0 24 24"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														height="1em"
+														width="1em"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<polyline points="20 6 9 17 4 12"></polyline>
+													</svg>
+												</div>
+												<span class="dark:text-gray-100 text-sky-500"
+													>Nextjs/React</span
+												>
+											</div>
+											<div
+												data-aos="fade-up"
+												data-aos-duration="1600"
+												class="flex justify-start items-center py-2 leading-tight lg:w-2/5 text-lg"
+												index="1"
+											>
+												<div
+													class="flex justify-center items-center w-5 h-5 rounded-full mr-4 text-sm bg-sky-500 text-white"
+													style="min-width: 1.25rem"
+												>
+													<svg
+														stroke="currentColor"
+														fill="none"
+														stroke-width="2"
+														viewBox="0 0 24 24"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														height="1em"
+														width="1em"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<polyline points="20 6 9 17 4 12"></polyline>
+													</svg>
+												</div>
+												<span class="dark:text-gray-100 text-sky-500"
+													>Material-UI</span
+												>
+											</div>
+											<div
+												data-aos="fade-up"
+												data-aos-duration="1700"
+												class="flex justify-start items-center py-2 leading-tight lg:w-2/5 text-lg"
+												index="2"
+											>
+												<div
+													class="flex justify-center items-center w-5 h-5 rounded-full mr-4 text-sm bg-sky-500 text-white"
+													style="min-width: 1.25rem"
+												>
+													<svg
+														stroke="currentColor"
+														fill="none"
+														stroke-width="2"
+														viewBox="0 0 24 24"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														height="1em"
+														width="1em"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<polyline points="20 6 9 17 4 12"></polyline>
+													</svg>
+												</div>
+												<span class="dark:text-gray-100 text-sky-500"
+													>Firebase/Netlify</span
+												>
+											</div>
+											<div
+												data-aos="fade-up"
+												data-aos-duration="1800"
+												class="flex justify-start items-center py-2 leading-tight lg:w-2/5 text-lg"
+												index="3"
+											>
+												<div
+													class="flex justify-center items-center w-5 h-5 rounded-full mr-4 text-sm bg-sky-500 text-white"
+													style="min-width: 1.25rem"
+												>
+													<svg
+														stroke="currentColor"
+														fill="none"
+														stroke-width="2"
+														viewBox="0 0 24 24"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														height="1em"
+														width="1em"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<polyline points="20 6 9 17 4 12"></polyline>
+													</svg>
+												</div>
+												<span class="dark:text-gray-100 text-sky-500"
+													>Tailwind/SCSS</span
+												>
+											</div>
+										</div>
+									</div>
+									<div
+										class="flex w-full md:w-2/5 lg:w-1/2 max-w-xs md:max-w-sm mx-auto mt-10 md:mt-0 flex-wrap justify-center -mb-6"
+									>
+										<div data-aos="zoom-in" data-aos-duration="1500" index="0">
+											<div
+												class="w-16 h-16 lg:w-24 lg:h-24 mx-3 mb-6 p-2 flex justify-center items-center bg-white rounded-full shadow-xl"
+											>
+												<img
+													src="https://images.reactbricks.com/original/3a8728ab-7e86-4c6e-bf34-3b94a71c3d43/javascript.png"
+													alt="JAVASCRIPT "
+													class="w-12 h-12 lg:w-16 lg:h-16"
+													srcset="
+														https://images.reactbricks.com/src_set/3a8728ab-7e86-4c6e-bf34-3b94a71c3d43-1170/javascript.png 1170w,
+														https://images.reactbricks.com/src_set/3a8728ab-7e86-4c6e-bf34-3b94a71c3d43-800/javascript.png   800w,
+														https://images.reactbricks.com/src_set/3a8728ab-7e86-4c6e-bf34-3b94a71c3d43-400/javascript.png   400w,
+														https://images.reactbricks.com/src_set/3a8728ab-7e86-4c6e-bf34-3b94a71c3d43-200/javascript.png   200w
+													"
+												/>
+											</div>
+										</div>
+										<div data-aos="zoom-in" data-aos-duration="1500" index="1">
+											<div
+												class="w-16 h-16 lg:w-24 lg:h-24 mx-3 mb-6 p-2 flex justify-center items-center bg-white rounded-full shadow-xl"
+											>
+												<img
+													src="https://images.reactbricks.com/original/c3504d73-9c64-4ed3-a34b-87835e668b17/react.svg"
+													alt="React"
+													class="w-12 h-12 lg:w-16 lg:h-16"
+													style=""
+													srcset=""
+												/>
+											</div>
+										</div>
+										<div data-aos="zoom-in" data-aos-duration="1500" index="2">
+											<div
+												class="w-16 h-16 lg:w-24 lg:h-24 mx-3 mb-6 p-2 flex justify-center items-center bg-white rounded-full shadow-xl"
+											>
+												<img
+													src="https://images.reactbricks.com/original/29cb37d5-c19d-49cc-90e3-c245c7913241/next-js.svg"
+													alt="Next.js"
+													class="w-12 h-12 lg:w-16 lg:h-16"
+													style=""
+													srcset=""
+												/>
+											</div>
+										</div>
+										<div data-aos="zoom-in" data-aos-duration="1500" index="3">
+											<div
+												class="w-16 h-16 lg:w-24 lg:h-24 mx-3 mb-6 p-2 flex justify-center items-center bg-white rounded-full shadow-xl"
+											>
+												<img
+													src="https://images.reactbricks.com/original/8b8cda87-ba9b-45c6-a1cb-acf61cf7f525/tailwind-css.svg"
+													alt="Tailwind CSS"
+													class="w-12 h-12 lg:w-16 lg:h-16"
+													style=""
+													srcset=""
+												/>
+											</div>
+										</div>
+										<div data-aos="zoom-in" data-aos-duration="1500" index="4">
+											<div
+												class="w-16 h-16 lg:w-24 lg:h-24 mx-3 mb-6 p-2 flex justify-center items-center bg-white rounded-full overflow-hidden shadow-xl"
+											>
+												<img
+													src="https://images.reactbricks.com/original/22e7c5a0-14e5-482c-89e4-e41de520226a/materialui.jpg"
+													alt="material-ui"
+													class="w-12 h-12 lg:w-16 lg:h-16"
+													style=""
+													srcset="
+														https://images.reactbricks.com/src_set/22e7c5a0-14e5-482c-89e4-e41de520226a-400/materialui.jpg 400w,
+														https://images.reactbricks.com/src_set/22e7c5a0-14e5-482c-89e4-e41de520226a-200/materialui.jpg 200w
+													"
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- Padding -->
+							<section
+								class="bg-gray-900 dark:bg-gray-900 dark overflow-hidden"
+							>
+								<div class="mt-11 h-24"></div>
+							</section>
+							<!-- project title -->
+							<section
+								class="bg-gray-900 dark:bg-gray-900 dark overflow-hidden"
+							>
+								<div
+									class="mx-auto px-5 sm:w-11/12 xl:w-3/4 2xl:w-2/3 py-12 xl:py-20"
+								>
+									<div class="max-w-xl mx-auto px-5">
+										<div
+											class="text-gray-800 dark:text-gray-100 from-blue-500 to-teal-400 text-3xl sm:text-5xl"
+											style="-webkit-text-fill-color: transparent"
+										>
+											<h1
+												class="text-center font-black mb-4 pb-1 bg-clip-text bg-gradient-to-r text-gray-800 dark:text-gray-100"
+												style="line-height: 1.1"
+											>
+												My Coding Projects
+											</h1>
+										</div>
+										<p
+											class="text-lg sm:text-xl text-center leading-7 sm:leading-8 text-gray-700 dark:text-gray-300"
+										>
+											Websites &amp; other appapplications
+										</p>
+									</div>
+								</div>
+							</section>
+							<div id="projectsList"></div>
+						</div>
+					</div>
+				</main>
+				<footer class="bg-dark-grey max-w flex text-white">
+					<div class="container mx-auto text-center">
+						<div class="py-32">
+							<h1
+								data-aos="fade-up"
+								data-aos-duration="1800"
+								class="text-5xl p-2 m-1 bg-clip-text bg-gradient-to-r font-extrabold"
+							>
+								Don't be shy. Say hi 👋
+							</h1>
+							<p
+								data-aos="fade-up"
+								data-aos-duration="2200"
+								class="text-2xl p-2 m-1 text-hairline py-6"
+							>
+								Do you have a project or an idea that could use some help?
+								<br />Let's work together
+							</p>
+						</div>
+						<div
+							class="mx-auto p-2 m-1 sm:w-10/12 xl:w-3/5 2xl:w-2/5 py-12 xl:py-20"
+						>
+							<h1
+								data-aos="fade-in"
+								data-aos-duration="1800"
+								class="text-2xl p-2 m-1 text-hairline py-6"
+							>
+								Let's share contacts
+							</h1>
+							<form action="mailto:jrohila55@gmail.com">
+								<div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+									<input
+										data-aos="zoom-in"
+										data-aos-duration="2200"
+										type="text"
+										placeholder="Name"
+										class="dark:bg-slate-800 bg-dark-grey border border-gray-200 outline-none px-4 py-2 rounded-md hover:border-gray-400 focus:border-gray-400"
+									/>
+									<input
+										data-aos="zoom-in"
+										data-aos-duration="2200"
+										type="text"
+										placeholder="Email"
+										class="dark:bg-slate-800 border border-gray-200 outline-none px-4 py-2 rounded-md hover:border-gray-400 focus:border-gray-400"
+									/>
+									<input
+										data-aos="zoom-in"
+										data-aos-duration="2200"
+										type="text"
+										placeholder="Subject"
+										class="dark:bg-slate-800 border border-gray-200 outline-none px-4 py-2 rounded-md hover:border-gray-400 focus:border-gray-400 md:col-span-2"
+									/>
+									<textarea
+										data-aos="zoom-in"
+										data-aos-duration="2200"
+										rows="5"
+										placeholder="Message"
+										class="dark:bg-slate-800 border border-gray-200 outline-none px-4 py-2 rounded-md hover:border-gray-400 focus:border-gray-400 md:col-span-2"
+									></textarea>
+								</div>
+								<button
+									data-aos="zoom-in"
+									data-aos-duration="2200"
+									class="py-3 mx-2 my-5 rounded-full font-bold leading-none translate-hover-2 hover:shadow-lg transition-all ease-in-out duration-150 px-5 border border-sky-600 text-sky-600 hover:text-sky-600 dark:border-sky-500 dark:text-sky-500"
+								>
+									Send Message
+								</button>
+							</form>
+						</div>
+
+						<div
+							class="flex pb-32 flex-row flex-wrap justify-center items-center"
+						>
+							<ul class="list-reset flex p-10">
+								<li data-aos="zoom-in" data-aos-duration="1800" class="m-2">
+									<a
+										class="text-grey-darker no-underline hover:text-white"
+										href="https://github.com/jayantrohila57"
+									>
+										<svg
+											viewBox="0 0 24 24"
+											class="fill-current w-10 h-10"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+											/>
+										</svg>
+									</a>
+								</li>
+								<li data-aos="zoom-in" data-aos-duration="1800" class="m-2">
+									<a
+										class="text-grey-darker no-underline hover:text-white"
+										href="https://twitter.com/jayant_rohila"
+										><svg
+											viewBox="0 0 24 24"
+											class="fill-current w-10 h-10"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z"
+											/>
+										</svg>
+									</a>
+								</li>
+								<li data-aos="zoom-in" data-aos-duration="1800" class="m-2">
+									<a
+										class="text-grey-darker no-underline hover:text-white"
+										href="https://www.facebook.com/jayantrohila57/"
+									>
+										<svg
+											viewBox="0 0 24 24"
+											class="fill-current w-10 h-10"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M23.998 12c0-6.628-5.372-12-11.999-12C5.372 0 0 5.372 0 12c0 5.988 4.388 10.952 10.124 11.852v-8.384H7.078v-3.469h3.046V9.356c0-3.008 1.792-4.669 4.532-4.669 1.313 0 2.686.234 2.686.234v2.953H15.83c-1.49 0-1.955.925-1.955 1.874V12h3.328l-.532 3.469h-2.796v8.384c5.736-.9 10.124-5.864 10.124-11.853z"
+											/>
+										</svg>
+									</a>
+								</li>
+							</ul>
+							<ul class="flex-row flex-wrap justify-center items-center p-5">
+								<li data-aos="zoom-in" data-aos-duration="1800" class="m-2">
+									<a
+										class="text-grey-darker no-underline hover:text-white"
+										href="#"
+										>Terms of Use</a
+									>
+								</li>
+								<li data-aos="zoom-in" data-aos-duration="1800" class="m-2">
+									<a
+										class="text-grey-darker no-underline hover:text-white"
+										href="#"
+										>Privacy</a
+									>
+								</li>
+							</ul>
+							<div class="pb-3 flex flex-col flex-wrap text-center p-2">
+								<h3 data-aos="zoom-in" data-aos-duration="1800">
+									© 2022 Copyright
+								</h3>
+								<a
+									data-aos="zoom-in"
+									data-aos-duration="1800"
+									class="text-gray-600 font-semibold"
+									href="https://jayantrohila.dev"
+									>Jayant Rohila</a
+								>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<!-- end -->
+		<script>
+			function LoadingAnimation() {
+				const div = document.querySelector("div");
+				div.classList.remove("visible");
+			}
+
+			let projects = [
+				{
+					h2: "Voltsec Pentest Website",
+					p: "This website made using ReactJS, Style framework Material-UI, Animation framer-motion & AOS, Hosting & Auth Firebase, Database Firebase.",
+					Link: "https://voltsec.web.app/",
+					git: "https://voltsec.web.app/",
+					ImgSrc: "./img/Voltsec.png",
+				},
+				{
+					h2: "Ancient OS Website",
+					p: "This website made using HTML, Style CSS/SCSS, Animation AOS, Hosting Netlify",
+					Link: "https://ancientrom.xyz/",
+					git: "https://ancientrom.xyz/",
+					ImgSrc: "./img/ancientos.png",
+				},
+				{
+					h2: "TraceHub Website",
+					p: "This website made using ReactJS, Style CSS/SCSS, Animation framer-motion &amp; AOS, Frontend Hosting Netlify, ExpressJS Hosting Heroku, Database MongoDB-Atlas.",
+					Link: "https://tracehub.netlify.app/",
+					git: "https://tracehub.netlify.app/",
+					ImgSrc: "./img/tracehub.png",
+				},
+				{
+					h2: "Portfolio -v1",
+					p: "This website made using HTML, Style CSS/SCSS, Animation AOS, Hosting Netlify",
+					Link: "https://jayantrohila.netlify.app/",
+					git: "https://jayantrohila.netlify.app/",
+					ImgSrc: "./img/portfolio.png",
+				},
+			];
+
+			projects.map((element, key) => {
+				var div = document.createElement("div");
+				div.innerHTML = `
+			<section class="bg-gray-900 dark:bg-gray-900 ">
+
+					<div class="flex p-10 justify-around flex-wrap flex-row">
+						<div
+							data-aos="zoom-in"
+							data-aos-duration="1900"
+							class="mt-10 mb-0 md:w-2/5 md:mt-0 md:mb-0"
+						>
+						<div>
+								<img
+									src="${element.ImgSrc}"
+									alt="portfolio"
+									class="rounded-lg shadow-2xl"
+								/>
+							</div>
+						</div>
+
+						<div class="w-96 p-2 ml-5 flex flex-col">
+							<h2
+								data-aos="fade-up"
+								data-aos-duration="1600"
+								class="mt-5 mb-4 text-gray-900 dark:text-gray-100 text-2xl sm:text-3xl font-extrabold"
+								style="line-height: 1.125"
+							>
+								${element.h2}
+							</h2>
+							<p
+								data-aos="fade-up"
+								data-aos-duration="1800"
+								class="text-lg sm:text-xl mb-3 text-gray-700 dark:text-gray-300"
+								style="line-height: 1.6"
+							>
+								${element.p}
+							</p>
+							<div
+								data-aos="fade-in"
+								data-aos-duration="1600"
+								class="flex items-start flex-row sm:flex-row mt-4"
+							>
+								<a
+									href="${element.Link}"
+									target="_blank"
+									class="py-3 mx-2 my-2 rounded-full font-bold leading-none translate-hover-2 hover:shadow-lg transition-all ease-in-out duration-150 px-5 border border-sky-600 text-sky-600 hover:text-sky-600 dark:border-sky-500 dark:text-sky-500"
+									rel="noopener noreferrer"
+									index="0"
+								>
+									Demo
+								</a>
+								<a
+									href="${element.git}"
+									target="_blank"
+									class="py-3 mx-2 my-2 rounded-full font-bold leading-none translate-hover-2 hover:shadow-lg transition-all ease-in-out duration-150 px-5 border border-sky-600 text-sky-600 hover:text-sky-600 dark:border-sky-500 dark:text-sky-500"
+									rel="noopener noreferrer"
+									index="0"
+								>
+									Github
+								</a>
+							</div>
+						</div>
+					</div>
+
+			</section>;
+			`;
+				document.getElementById("projectsList").appendChild(div);
+			});
+		</script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
+</html>
