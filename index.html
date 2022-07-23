@@ -92,7 +92,6 @@
     <link rel="xml" href="sitemap.xml" />
     <link rel="config" href="config.json" />
     <link rel="robots" href="robots.txt" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="icon" rel="preload" href="./dist/img/JayantRohila.jpg" type="image/png" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
     <link rel="stylesheet" href="./dist/css/styles.min.css" />
@@ -100,73 +99,42 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!--Scripts -->
-    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 
-    <script>
-        $(document).ready(function() {
-            $("#later").hide();
-            $(".Scroll").hide();
-            $("#later").delay(1000).slideDown(1000);
-            $(".Scroll").delay(1000).slideDown(1000);
-        });
-    </script>
+
+
 </head>
 <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
 <body>
     <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
-    <div>
-        <div id="loading">
-            <div id="round-ani">
-                <div class="circle-box1"></div>
-                <div class="circle-box2"></div>
-                <div class="circle-box3"></div>
-                <div id="spinner"></div>
-            </div>
-        </div>
-
-        <div id="portfolio" class="align-self-center media container-fluid intro-box">
-            <div id="later">
-                <p class="display-3 text-center" data-aos="fade-up" data-aos-duration="500">
-                    #Portfolio
-                </p>
-            </div>
-            <div data-aos="zoom-in" data-aos-duration="1400" id="round-ani">
-                <div class="circle-box1"></div>
-                <div class="circle-box2"></div>
-                <div class="circle-box3"></div>
-                <div class="circle-box4"></div>
-                <div class="circle-box5"></div>
-                <h2>
-                    Jayant<br /> Rohila
-                </h2>
-            </div>
-            <div id="later">
-                <div data-aos="fade-up" data-aos-duration="1400" class="Scroll">
-                    <a class="Scroll-link" href="#profile">Scroll Down</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
-    <div class="main-box container-fluid">
+    <div class="main-box -fluid">
         <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
-        <section loading="lazy" id="profile" class="container scroll-overFL">
+        <section loading="lazy" id="profile" class="full-box scroll-overFL">
             <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
-            <div loading="lazy" class="profile m-1 mb-5 img-fluid d-flex justify-content-center">
-                <div data-aos="zoom-out" data-aos-duration="1400" class="mt-5 profile_img">
+            <div loading="lazy" class="profile">
+                <div data-aos="zoom-out" data-aos-duration="2000" class="mt-5 profile_img">
                     <img class="profile_img" src="/dist/img/JayantRohila.jpg" alt="Jayant Rohila" />
                 </div>
             </div>
-            <div data-aos="fade-right" data-aos-duration="1400" id="username">
+            <div data-aos="fade-up" data-aos-duration="2000" id="username">
                 <span><p class="display-3 text-center">Jayant Rohila</p></span><br />
             </div>
-            <div data-aos="fade-right" data-aos-duration="1400" id="userbio">
-                <p>
-                    I'm a web developer. Loves to make responsive designs and animation on the web apps and sites.
-                </p>
 
-                <span><i class="fas fa-envelope"></i> &nbsp;<a
+
+        </section>
+        <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+
+        <section class="full-box">
+            <div id="about" class="about-info-box">
+                <div data-aos="fade-up" data-aos-duration="2000">
+                    <p class="head-yo">#About Me!</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="2000" id="userbio">
+                    <p>
+                        I'm a web developer. Loves to make responsive designs and animation on the web apps and sites.
+                    </p>
+
+                    <span><i class="fas fa-envelope"></i> &nbsp;<a
 							href="mailto:jrohila55@gmail.com?subject=Contact%20Jayant%20Rohila"
 							>Send mail</a
 						></span
@@ -182,31 +150,8 @@
 						hire</span
 					>
 				</div>
-				<div
-					data-aos="fade-right"
-					data-aos-duration="1400"
-					class="container mt-5"
-				>
-					<span class="mt-5"><h2>Page Link:</h2></span><br />
-                <span> <a href="#portfolio">| Protfolio</a></span>
-                <span> <a href="#about-info-box">| About </a></span>
-                <span> <a href="#work">| Work </a></span>
-                <span> <a href="#skill">| Skill </a></span>
-                <span> <a href="#socials">| Social Links </a></span>
-                <span> <a href="#footer">| Site Info </a></span>
-            </div>
-            <div data-aos="fade-up" data-aos-duration="1400" class="Scroll">
-                <a class="Scroll-link" href="#about">Scroll Down</a>
-            </div>
-        </section>
-        <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
-
-        <section class="scroll-overFL container p-1">
-            <div id="about" class="about-info-box mb-5 mt-5">
-                <div data-aos="fade-up" data-aos-duration="1400">
-                    <p class="display-3 text-center head-yo">#About Me!</p>
-                </div>
-                <div data-aos="fade-right" data-aos-duration="1400">
+				
+                <div data-aos="fade-up" data-aos-duration="2000">
                     <ul>
                         <li>- 👋 Hi there Myself #Jayant Rohila</li>
                         <li>
@@ -245,22 +190,20 @@
                     </ul>
                 </div>
 
-                <div data-aos="fade-up" data-aos-duration="1400" class="Scroll">
-                    <a class="Scroll-link" href="#project">Scroll Down</a>
-                </div>
+
             </div>
         </section>
         <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
-        <section class="scroll-overFL container">
+        <section class="full-box scroll-overFL ">
             <div id="project">
-                <p class="display-3 mt-5 head-yo text-center" data-aos="fade-up" data-aos-duration="1400">
+                <p class="head-yo" data-aos="fade-up" data-aos-duration="2000">
                     #Projects
                 </p>
 
-                <div class="container">
+                <div class="">
                     <div class="row">
-                        <div data-aos="fade-right" data-aos-duration="1400" class="col-sm border-b">
+                        <div data-aos="fade-up" data-aos-duration="2000" class="">
                             <div class="section-box">
                                 <div class="section_title">
                                     <h3>
@@ -317,9 +260,9 @@
 							</div>
 
 							<div
-								data-aos="fade-right"
-								data-aos-duration="1400"
-								class="col-sm border-b"
+								data-aos="fade-up"
+								data-aos-duration="2000"
+								class=""
 							>
 								<div class="section-box">
 									<div class="section_title">
@@ -347,128 +290,124 @@
 										<ul>
 											<li>
 												#1 Tribute Page: <span><a href="#"> | Link</a></span>
-                                        </li>
+                    </li>
 
-                                        <li>
-                                            #2 Survey Form: <span><a href="#"> | Link</a></span>
-                                        </li>
+                    <li>
+                        #2 Survey Form: <span><a href="#"> | Link</a></span>
+                    </li>
 
-                                        <li>
-                                            #3 Js Doc App: <span><a href="#"> | Link</a></span>
-                                        </li>
+                    <li>
+                        #3 Js Doc App: <span><a href="#"> | Link</a></span>
+                    </li>
 
-                                        <li>
-                                            #4 Fashion site: <span><a href="#"> | Link</a></span>
-                                        </li>
+                    <li>
+                        #4 Fashion site: <span><a href="#"> | Link</a></span>
+                    </li>
 
-                                        <li>
-                                            #5 Landing Page: <span><a href="#"> | Link</a></span>
-                                        </li>
+                    <li>
+                        #5 Landing Page: <span><a href="#"> | Link</a></span>
+                    </li>
 
-                                        <li>
-                                            #6 Portfolio: <span><a href="#"> | Link</a></span>
-                                        </li>
-                                        </ul>
-                                </div>
+                    <li>
+                        #6 Portfolio: <span><a href="#"> | Link</a></span>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    </section>
+    <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+    <section class="full-box">
+        <div id="Experience">
+            <p class="head-yo" data-aos="fade-up" data-aos-duration="2000">
+                #Experience
+            </p>
+
+            <div class="">
+                <div class="row">
+                    <div data-aos="fade-up" data-aos-duration="2000" class="">
+                        <div class="section-box">
+                            <div class="section_title text-center">
+                                <h3>Junior Web Developer</h3>
+                            </div>
+                            <br />
+                            <div class="about_section">
+                                <ul>
+                                    <li>
+                                        <p>Company: Braeon Technocrats</p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Developer of ServiceNow Administrator & Development
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Design and Maintain Instance</p>
+                                    </li>
+                                    <li>
+                                        <p>Jul 2021 – Present (9 mos)</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="2000" class="">
+                        <div class="section-box">
+                            <div class="section_title text-center">
+                                <h3>Web Project Assistant</h3>
+                            </div>
+                            <br />
+                            <div class="about_section">
+                                <ul>
+                                    <li>
+                                        <p>Company: HelpDesk Support</p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Integrating HelpDesk Software with ServiceNow Instance
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Design and Maintain Instance</p>
+                                    </li>
+                                    <li>
+                                        <p>Oct 2021 – Present (6 mos)</p>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div data-aos="fade-up" data-aos-duration="1400" class="Scroll">
-                <a class="Scroll-link" href="#Experience">Scroll Down</a>
-            </div>
-        </section>
-        <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
-        <section class="scroll-overFL container">
-            <div id="Experience">
-                <p class="display-3 mt-5 head-yo text-center" data-aos="fade-up" data-aos-duration="1400">
-                    #Experience
-                </p>
+        </div>
 
-                <div class="container">
-                    <div class="row">
-                        <div data-aos="fade-right" data-aos-duration="1400" class="col-sm border-b">
-                            <div class="section-box">
-                                <div class="section_title text-center">
-                                    <h3>Junior Web Developer</h3>
-                                </div>
-                                <br />
-                                <div class="about_section">
-                                    <ul>
-                                        <li>
-                                            <p>Company: Braeon Technocrats</p>
-                                        </li>
-                                        <li>
-                                            <p>
-                                                Developer of ServiceNow Administrator & Development
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p>Design and Maintain Instance</p>
-                                        </li>
-                                        <li>
-                                            <p>Jul 2021 – Present (9 mos)</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div data-aos="fade-right" data-aos-duration="1400" class="col-sm border-b">
-                            <div class="section-box">
-                                <div class="section_title text-center">
-                                    <h3>Web Project Assistant</h3>
-                                </div>
-                                <br />
-                                <div class="about_section">
-                                    <ul>
-                                        <li>
-                                            <p>Company: HelpDesk Support</p>
-                                        </li>
-                                        <li>
-                                            <p>
-                                                Integrating HelpDesk Software with ServiceNow Instance
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p>Design and Maintain Instance</p>
-                                        </li>
-                                        <li>
-                                            <p>Oct 2021 – Present (6 mos)</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div data-aos="fade-up" data-aos-duration="1400" class="Scroll">
-                <a class="Scroll-link" href="#skill">Scroll Down</a>
-            </div>
-        </section>
-        <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
-        <!--===== SKILLS =====-->
-        <section class="scroll-overFL container-fluid text-center">
-            <div id="skill">
-                <p class="display-3 mt-5 head-yo text-center" data-aos="fade-up" data-aos-duration="1400">
-                    #My Skill
-                </p>
-                <div data-aos="fade-right" data-aos-duration="1400" class="skills_container">
-                    <span><img
+    </section>
+    <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+    <!--===== SKILLS =====-->
+    <section class="full-box">
+        <div id="skill">
+            <p class="head-yo " data-aos="fade-up" data-aos-duration="2000">
+                #My Skill
+            </p>
+            <div data-aos="fade-up" data-aos-duration="2000" class="skills_">
+                <span><img
 								loading="lazy"
 								src="./dist/icon/html5-original-wordmark.svg"
 								alt="HTML5"
 								height="50"
 								width="50" /></span
 						><span> <h3>HTML5</h3></span>
-                    <h3>95%</h3>
-                    <div class="skills_data">
-                        <div class="skillsBar1"></div>
-                    </div>
+                <h3>95%</h3>
+                <div class="skills_data">
+                    <div class="skillsBar1"></div>
                 </div>
-                <div data-aos="fade-right" data-aos-duration="1400" class="skills_container">
-                    <span>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000" class="skills_">
+                <span>
 							<img
 								loading="lazy"
 								src="./dist/icon/css3-original-wordmark.svg"
@@ -477,13 +416,13 @@
 								width="50"
 							/> </span
 						><span><h3>CSS</h3></span>
-                    <h3>80%</h3>
-                    <div class="skills_data">
-                        <div class="skillsBar2"></div>
-                    </div>
+                <h3>80%</h3>
+                <div class="skills_data">
+                    <div class="skillsBar2"></div>
                 </div>
-                <div data-aos="fade-right" data-aos-duration="1400" class="skills_container">
-                    <span>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000" class="skills_">
+                <span>
 							<img
 								loading="lazy"
 								src="./dist/icon/javascript-original.svg"
@@ -492,13 +431,13 @@
 								width="50"
 							/> </span
 						><span><h3>Javascript</h3></span>
-                    <h3>60%</h3>
-                    <div class="skills_data">
-                        <div class="skillsBar3"></div>
-                    </div>
+                <h3>60%</h3>
+                <div class="skills_data">
+                    <div class="skillsBar3"></div>
                 </div>
-                <div data-aos="fade-right" data-aos-duration="1400" class="skills_container">
-                    <span>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000" class="skills_">
+                <span>
 							<img
 								loading="lazy"
 								src="./dist/icon/git-scm-icon.svg"
@@ -507,13 +446,13 @@
 								width="50"
 							/> </span
 						><span> <h3>Git</h3></span>
-                    <h3>70%</h3>
-                    <div class="skills_data">
-                        <div class="skillsBar4"></div>
-                    </div>
+                <h3>70%</h3>
+                <div class="skills_data">
+                    <div class="skillsBar4"></div>
                 </div>
-                <div data-aos="fade-right" data-aos-duration="1400" class="skills_container">
-                    <span>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000" class="skills_">
+                <span>
 							<img
 								loading="lazy"
 								src="./dist/icon/react-original-wordmark.svg"
@@ -522,13 +461,13 @@
 								width="50"
 							/> </span
 						><span> <h3>React</h3></span>
-                    <h3>30%</h3>
-                    <div class="skills_data">
-                        <div class="skillsBar5"></div>
-                    </div>
+                <h3>30%</h3>
+                <div class="skills_data">
+                    <div class="skillsBar5"></div>
                 </div>
-                <div data-aos="fade-right" data-aos-duration="1400" class="skills_container">
-                    <span>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000" class="skills_">
+                <span>
 							<img
 								loading="lazy"
 								src="./dist/icon/photoshop-plain.svg"
@@ -537,158 +476,152 @@
 								width="50"
 							/> </span
 						><span> <h3>Photoshop</h3></span>
-                    <h3>80%</h3>
-                    <div class="skills_data">
-                        <div class="skillsBar6"></div>
-                    </div>
+                <h3>80%</h3>
+                <div class="skills_data">
+                    <div class="skillsBar6"></div>
                 </div>
-                <!--  <div class="container-fluid mt-5" data-aos="fade-up" data-aos-duration="1400">
+            </div>
+            <!--  <div class="-fluid mt-5" data-aos="fade-up" data-aos-duration="2000">
                     <img src="https://raw.githubusercontent.com/jayantrohila57/Stats/68f9b13c0040b702e7d770e1f6178ef0ffae5e77/generated/languages.svg" alt="language">
                     <img src="https://raw.githubusercontent.com/jayantrohila57/Stats/68f9b13c0040b702e7d770e1f6178ef0ffae5e77/generated/overview.svg" alt="info">
                 </div>
             -->
-            </div>
-            <div data-aos="fade-up" data-aos-duration="1400" class="Scroll">
-                <a class="Scroll-link" href="#socials">Scroll Down</a>
-            </div>
-        </section>
-        <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+        </div>
 
-        <section class="scroll-overFL container-fluid">
-            <div id="socials">
-                <p class="display-3 mt-5 head-yo text-center" data-aos="fade-up" data-aos-duration="1400">
-                    #Social Links
-                </p>
-                <div data-aos="fade-right" data-aos-duration="1400" class="skillSpace container-fluid text-center">
-                    <a href="https://open.spotify.com/user/9yo13loxl69oqp0hueroypa45">| 
+    </section>
+    <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+
+    <section class="full-box">
+        <div id="socials">
+            <p class="head-yo" data-aos="fade-up" data-aos-duration="2000">
+                #Social Links
+            </p>
+            <div data-aos="fade-up" data-aos-duration="2000" class="skillSpace">
+                <a href="https://open.spotify.com/user/9yo13loxl69oqp0hueroypa45">| 
 							<span><i class="fab fa-spotify"></i></span> Spotify
 						</a>
 
-                    <a href="https://join.skype.com/invite/wE2Scm4r5gNF">| 
+                <a href="https://join.skype.com/invite/wE2Scm4r5gNF">| 
 							<span><i class="fab fa-skype"></i></span> Skype
 						</a>
 
-                    <a href="https://in.pinterest.com/jayantrohila">| 
+                <a href="https://in.pinterest.com/jayantrohila">| 
 							<span><i class="fab fa-pinterest"></i></span> Pinterest
 						</a>
 
-                    <a href="https://www.snapchat.com/add/jayantrohila?share_id=PHr0D5asl5Y">| 
+                <a href="https://www.snapchat.com/add/jayantrohila?share_id=PHr0D5asl5Y">| 
 							<span><i class="fab fa-snapchat"></i></span> SnapChat
 						</a>
 
-                    <a href="https://www.facebook.com/jayantrohila57">| 
+                <a href="https://www.facebook.com/jayantrohila57">| 
 							<span><i class="fab fa-facebook"></i></span> FaceBook
 						</a>
 
-                    <a href="https://twitter.com/jayant_rohila">| 
+                <a href="https://twitter.com/jayant_rohila">| 
 							<span><i class="fab fa-twitter"></i></span> Twitter
 						</a>
 
-                    <a href="https://www.twitch.tv/jayantrohila57">| 
+                <a href="https://www.twitch.tv/jayantrohila57">| 
 							<span><i class="fab fa-twitch"></i></span> Twitch
 						</a>
 
-                    <a href="https://www.clubhouse.com/@jayant_rohila">| 
+                <a href="https://www.clubhouse.com/@jayant_rohila">| 
 							<span><i class="fab fa-meetup"></i></span> ClubHouse
 						</a>
 
-                    <a href="https://www.linkedin.com/in/jayant-rohila">
+                <a href="https://www.linkedin.com/in/jayant-rohila">
 							| <span><i class="fab fa-linkedin"></i></span> LinkedIn
 						</a>
 
-                    <a href="https://signal.group/#CjQKIDLXGadxxhu1OkWNkJjzP5g7ccKGw7lMe3wN1eKmPzG2EhAWw_u4mRmaCxA8jJgCNi-w">
+                <a href="https://signal.group/#CjQKIDLXGadxxhu1OkWNkJjzP5g7ccKGw7lMe3wN1eKmPzG2EhAWw_u4mRmaCxA8jJgCNi-w">
 							| <span><i class="fa fa-signal"></i></span> Signal
 						</a>
 
-                    <a href="https://linktr.ee/JayantRohila">| <span><i class="fa fa-link"></i></span> LinkTree
+                <a href="https://linktr.ee/JayantRohila">| <span><i class="fa fa-link"></i></span> LinkTree
 						</a>
 
-                    <a href="https://t.me/jayantrohila">| <span><i class="fab fa-telegram-plane"></i></span> Telegram
+                <a href="https://t.me/jayantrohila">| <span><i class="fab fa-telegram-plane"></i></span> Telegram
 						</a>
 
-                    <a href="https://api.whatsapp.com/send?phone=917500310305">| <span><i class="fab fa-whatsapp"></i></span> WhatsApp
+                <a href="https://api.whatsapp.com/send?phone=917500310305">| <span><i class="fab fa-whatsapp"></i></span> WhatsApp
 						</a>
 
-                    <a href="https://www.instagram.com/jayant_rohila_">| <span><i class="fab fa-instagram"></i></span> Instagram
+                <a href="https://www.instagram.com/jayant_rohila_">| <span><i class="fab fa-instagram"></i></span> Instagram
 						</a>
 
-                    <a href="https://myanimelist.net/animelist/jayantrohila57">| <span><i class="fa fa-list"></i></span> AnimeList
+                <a href="https://myanimelist.net/animelist/jayantrohila57">| <span><i class="fa fa-list"></i></span> AnimeList
 						</a>
 
-                    <a href="https://www.paypal.me/jrohila55">| <span><i class="fab fa-paypal"></i></span> PayPal
+                <a href="https://www.paypal.me/jrohila55">| <span><i class="fab fa-paypal"></i></span> PayPal
 						</a>
 
-                    <a href="https://www.buymeacoffee.com/jayantrohila">| <span><i class="fa fa-coffee"></i></span> BuyCoffee
+                <a href="https://www.buymeacoffee.com/jayantrohila">| <span><i class="fa fa-coffee"></i></span> BuyCoffee
 						</a>
 
-                    <a href="https://www.reddit.com/user/JAYANT_ROHILA">| <span><i class="fab fa-reddit"></i></span> Reddit
+                <a href="https://www.reddit.com/user/JAYANT_ROHILA">| <span><i class="fab fa-reddit"></i></span> Reddit
 						</a>
 
-                    <a href="https://www.youtube.com/channel/UChwiANt27POchxvfK136XeQ?sub_confirmation=1">| <span><i class="fab fa-youtube"></i></span> Youtube
+                <a href="https://www.youtube.com/channel/UChwiANt27POchxvfK136XeQ?sub_confirmation=1">| <span><i class="fab fa-youtube"></i></span> Youtube
 						</a>
 
-                    <a href="https://github.com/jayantrohia57">| <span><i class="fab fa-github"></i></span> GitHub
+                <a href="https://github.com/jayantrohia57">| <span><i class="fab fa-github"></i></span> GitHub
 						</a>
 
-                    <a href="https://jayantrohila.hashnode.dev/">| <span><i class="fa fa-hashtag"></i></span> HashNode
+                <a href="https://jayantrohila.hashnode.dev/">| <span><i class="fa fa-hashtag"></i></span> HashNode
 						</a>
 
-                    <a href="https://dev.azure.com/jayantrohila">| <span><i class="fab fa-microsoft"></i></span> Azure
+                <a href="https://dev.azure.com/jayantrohila">| <span><i class="fab fa-microsoft"></i></span> Azure
 						</a>
 
-                    <a href="https://jayantrohila57.slack.com/">| <span><i class="fab fa-slack"></i></span> Slack
+                <a href="https://jayantrohila57.slack.com/">| <span><i class="fab fa-slack"></i></span> Slack
 						</a>
 
-                    <a href="http://g.dev/jayantrohila">| <span><i class="fab fa-google"></i></span> GoogleDev
+                <a href="http://g.dev/jayantrohila">| <span><i class="fab fa-google"></i></span> GoogleDev
 						</a>
-                    <a href="https://www.hackerrank.com/jrohila55">| 
+                <a href="https://www.hackerrank.com/jrohila55">| 
                         <span><i class="fab fa-hackerrank"></i></span> HackerRank
                     </a>
 
-                    <a href="https://marketplace.visualstudio.com/publishers/JayantRohila">| <span><i class="fab fa-microsoft"></i></span> MarketPlace
+                <a href="https://marketplace.visualstudio.com/publishers/JayantRohila">| <span><i class="fab fa-microsoft"></i></span> MarketPlace
 						</a>
 
-                    <a href="https://www.sololearn.com/profile/9745148">|<span><i class="fa fa-folder"></i></span> SoloLearn</a
+                <a href="https://www.sololearn.com/profile/9745148">|<span><i class="fa fa-folder"></i></span> SoloLearn</a
 						>
 					</div>
 				</div>
-				<div data-aos="fade-up" data-aos-duration="1400" class="Scroll">
-					<a class="Scroll-link" href="#footer">Scroll Down</a>
-                </div>
+				
         </section>
         <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
-        <section class="scroll-overFL container align-items-center">
+        <section class="full-box">
             <div id="footer" class="card-overlay">
-                <p class="display-3 mt-5 head-yo text-center" data-aos="fade-up" data-aos-duration="1400">
+                <p class="" data-aos="fade-up" data-aos-duration="2000">
                     #Site Info
                 </p>
                 <div class="footer">
                     <span> <a href="#portfolio">| Protfolio</a></span>
-                    <span> <a href="#about-info-box">| About </a></span>
-                    <span> <a href="#work">| Work </a></span>
-                    <span> <a href="#skill">| Skill </a></span>
-                    <span> <a href="#socials">| Social Links </a></span>
-                    <span> <a href="#footer">| Site Info </a></span>
-                </div>
-                <div class="Scroll mt-5">
-                    <a class="Scroll-link" href="#profile">Scroll To Top</a>
-                </div>
-                <div class="container text-center mb-5 mt-5">
-                    <p>----------------------------</p>
-                    <p>Copyright &copy; 2022 All rights reserved.</p>
-                    <p>This site is made by Jayant Rohila</p>
-                </div>
+                <span> <a href="#about-info-box">| About </a></span>
+                <span> <a href="#work">| Work </a></span>
+                <span> <a href="#skill">| Skill </a></span>
+                <span> <a href="#socials">| Social Links </a></span>
+                <span> <a href="#footer">| Site Info </a></span>
             </div>
-        </section>
-        <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+
+            <div class="">
+                <p>----------------------------</p>
+                <p>Copyright &copy; 2022 All rights reserved.</p>
+                <p>This site is made by Jayant Rohila</p>
+            </div>
         </div>
-        <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
-        <script src="/dist/app/app.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
+    </section>
+    <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+    </div>
+    <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+    <script src="/dist/app/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
